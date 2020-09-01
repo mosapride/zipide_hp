@@ -18,7 +18,7 @@ npm install
 npm run build
 ```
 
-`kurore_hp/docs/.vuepress/dist`にSSG後のHTMLファイル郡が出力される。
+`hp/docs/.vuepress/dist`にSSG後のHTMLファイル郡が出力される。
 
 ## License
 
