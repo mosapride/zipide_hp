@@ -61,7 +61,10 @@ module.exports = {
       },
     ],
     ['link', { rel: 'shortcut icon', href: '/favicons/favicon.ico' }],
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+    [
+      'meta',
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    ],
     ['meta', { name: 'theme-color', content: '#4a4a4a' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     [
@@ -98,20 +101,22 @@ module.exports = {
     sidebar: {
       '/TypeScript/': [
         {
-          title: 'Guide',
+          title: 'TypeScript',
           collapsable: false,
-          children: ['', 'using-vue', 'test'],
+          children: ['', 'developmentEnvironment', 'test'],
         },
       ],
-      '/Angular/' : [
-        'index.md'
-      ]
+      '/Angular/': [        {
+        title: 'Angular',
+        collapsable: false,
+        children: [''],
+      },],
     },
   },
   markdown: {
     lineNumbers: true,
     extendMarkdown: (md) => {
-      md.set({ breaks: true });
+      md.set({ breaks: false });
       md.use(require('markdown-it-imsize'));
       md.use(require('markdown-it-anchor'), {
         slugify: uslugify,
@@ -127,8 +132,9 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     'vuepress-plugin-smooth-scroll',
     'vuepress-plugin-redirect',
-    '@vuepress/search', {
-      searchMaxSuggestions: 10
+    '@vuepress/search',
+    {
+      searchMaxSuggestions: 10,
     },
     {
       locales: true,
