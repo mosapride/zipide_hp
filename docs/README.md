@@ -3,8 +3,8 @@ home: true
 heroImage: /hero.png
 lang: ja
 tagline: クロのドキュメント
-actionText: Quick Start →
-actionLink: /guide/
+actionText: TypeScript doc →
+actionLink: /TypeScript/
 features:
 - title: TypeScript
   details: 完全に理解した:any
