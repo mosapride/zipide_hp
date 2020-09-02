@@ -5,7 +5,7 @@
  */
 
 .home .hero img
-  max-width 450px!important
+  max-width 450px !important
 
 
 .theme-default-content:not(.custom) 
@@ -26,3 +26,10 @@ div[class*="language-"].line-numbers-mode .line-numbers-wrapper
 a.sidebar-link.active
   color: #43658b !important;
   font-weight: 700 !important;
+  
+
+section ul > li.sidebar-sub-header > a.sidebar-link.active::after
+  content: "💡";
+
+main.page p strong, main.page li strong
+  border-bottom: solid 2px #87CEFA;
