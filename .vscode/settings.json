@@ -1,6 +1,14 @@
 {
   "cSpell.words": [
+    "Deno",
     "Kuro",
-    "favicons"
+    "Xcode",
+    "favicons",
+    "printf",
+    "typechecker"
+  ],
+  "cSpell.enableFiletypes": [
+    "!javascript",
+    "!json"
   ]
 }

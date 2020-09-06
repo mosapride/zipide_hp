@@ -94,8 +94,13 @@ module.exports = {
         link: '/Angular/',
       },
       {
-        text: 'GitHub',
-        link: 'https://github.com/mosapride',
+        text: 'Other',
+        ariaLabel: 'Language Menu',
+        items: [
+          { text: 'HTML&CSS', link: '/htmlcss/' },
+          { text: 'Docker&Linux', link: '/dockerLinux/' },
+          { text: 'チラシの裏', link: '/blog/' },
+        ],
       },
     ],
     sidebar: {
@@ -103,15 +108,57 @@ module.exports = {
         {
           title: 'TypeScript',
           collapsable: false,
-          children: ['', 'developmentEnvironment', 'test'],
+          children: [
+            '',
+            'developmentEnvironmentInfo',
+            'developmentEnvironment',
+            'devEnd',
+          ],
         },
       ],
-      '/Angular/': [        {
-        title: 'Angular',
-        collapsable: false,
-        children: [''],
-      },],
+      '/Angular/': [
+        {
+          title: 'Angular',
+          collapsable: false,
+          children: [
+            '',
+            'vscode',
+            'ngnew',
+            'styleCoding',
+            'bindingInput',
+            'datePipe',
+            'outerScript',
+          ],
+        },
+      ],
+      '/htmlcss/': [
+        {
+          title: 'HTML&CSS',
+          collapsable: false,
+          children: [''],
+        },
+      ],
+      '/dockerLinux/': [
+        {
+          title: 'Docker&Linux',
+          collapsable: false,
+          children: [''],
+        },
+      ],
+      '/blog/': [
+        {
+          title: 'blog',
+          collapsable: false,
+          children: [''],
+        },
+      ],
     },
+    repo: 'mosapride/hp',
+    repoLabel: 'GitHub',
+    docsRepo: 'mosapride/hp',
+    docsDir: 'docs',
+    editLinks: true,
+    editLinkText: 'GitHub',
   },
   markdown: {
     lineNumbers: true,
@@ -121,6 +168,8 @@ module.exports = {
       md.use(require('markdown-it-anchor'), {
         slugify: uslugify,
       });
+      md.disable(['link']);
+      md.enable(['link']);
     },
   },
 
@@ -129,7 +178,7 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    '@vuepress/medium-zoom',
     'vuepress-plugin-smooth-scroll',
     'vuepress-plugin-redirect',
     '@vuepress/search',
