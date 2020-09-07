@@ -113,6 +113,7 @@ module.exports = {
             'developmentEnvironmentInfo',
             'developmentEnvironment',
             'devEnd',
+            'classConstractor',
           ],
         },
       ],
@@ -125,6 +126,7 @@ module.exports = {
             'vscode',
             'ngnew',
             'styleCoding',
+            'class_style.md',
             'bindingInput',
             'datePipe',
             'outerScript',
@@ -142,7 +144,7 @@ module.exports = {
         {
           title: 'Docker&Linux',
           collapsable: false,
-          children: [''],
+          children: ['', 'command'],
         },
       ],
       '/blog/': [

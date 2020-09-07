@@ -14,3 +14,32 @@ Angularプロジェクトを快適にコーディングするためのVS Codeの
   * TSLintは2019年に廃止されESLintへの移行が勧められてるがAngular10時点ではまだ対応されてない。
   * 参考：github - angular/angular-cli - issues [Migration to ESLint](https://github.com/angular/angular-cli/issues/13732)
 
+## Angularプロジェクトのデバック設定
+
+作業ルートディレクトリに`.vscode`フォルダを作り、その下に`launch.json`ファイルを作成する。
+
+`.vscode/launch.json`の内容
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "chrome",
+          "request": "launch",
+          "name": "Launch Chrome against localhost",
+          "url": "http://localhost:4200",
+          "webRoot": "${workspaceFolder}"
+      },
+      {
+          "type": "chrome",
+          "request": "attach",
+          "name": "Attach to Chrome",
+          "port": 9222,
+          "webRoot": "${workspaceFolder}"
+      }
+  ]
+}
+```
+
+`F5`キーでデバックモードで動作し、ブレークポイントなど実行できる。
