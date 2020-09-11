@@ -21,7 +21,7 @@ parameterの説明
 * currentValue
   * 現在処理されている配列の要素
 * currentIndex
-  * 現在処理されている配列のインデックス(1,2,3,.....)
+  * 現在処理されている配列のインデックス(0,1,2,3,.....)
 * array
   * `reduce()`が呼び出された配列
 * initialValue
