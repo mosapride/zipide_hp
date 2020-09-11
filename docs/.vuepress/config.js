@@ -79,6 +79,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    domain: 'https://v-kurore.com',
     repo: '',
     editLinks: false,
     docsDir: '',
@@ -114,6 +115,7 @@ module.exports = {
             'developmentEnvironment',
             'devEnd',
             'classConstractor',
+            'arrayReduce',
           ],
         },
       ],
@@ -130,6 +132,7 @@ module.exports = {
             'bindingInput',
             'datePipe',
             'outerScript',
+            'svgIconDrective',
           ],
         },
       ],
@@ -183,21 +186,44 @@ module.exports = {
     '@vuepress/medium-zoom',
     'vuepress-plugin-smooth-scroll',
     'vuepress-plugin-redirect',
-    '@vuepress/search',
-    {
-      searchMaxSuggestions: 10,
-    },
+    [
+      '@vuepress/search',
+      {
+        searchMaxSuggestions: 10,
+      },
+    ],
     {
       locales: true,
     },
-    '@vuepress/active-header-links',
-    {
-      sidebarLinkSelector: '.sidebar-link',
-      headerAnchorSelector: '.header-anchor',
-    },
-    '@vuepress/google-analytics',
-    {
-      ga: 'UA-24357312-11', // UA-00000000-0
-    },
+    [
+      '@vuepress/active-header-links',
+      {
+        sidebarLinkSelector: '.sidebar-link',
+        headerAnchorSelector: '.header-anchor',
+      },
+    ],
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-24357312-11',
+      },
+    ],
+    [
+      'seo',
+      {
+        description: ($page, $site) =>
+          $page.frontmatter.description ||
+          ($page.excerpt &&
+            $page.excerpt.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '')) ||
+          $site.description ||
+          '',
+        title: ($page, $site) => $page.title || $site.title,
+        image: ($page, $site) =>
+          ($page.frontmatter.image &&
+            ($site.themeConfig.domain || '') + $page.frontmatter.image) ||
+          'http://placehold.jp/26/525252/ffffff/600x315.png?css=%7B%22background-image%22%3A%22%20url(https%3A%2F%2Fv-kurore.com%2Ffavicons%2Ffavicon180x180.png)%22%2C%22background-position%22%3A%22%20right%20bottom%22%2C%22background-repeat%20%20%22%3A%22%20no-repeat%22%7D&&text=' +
+            encodeURIComponent($page.title || $site.title),
+      },
+    ],
   ],
 };
