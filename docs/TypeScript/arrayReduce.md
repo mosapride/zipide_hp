@@ -95,11 +95,11 @@ const meat: IMeat[] = [
     { name: '豚肉', gram: 400, per100g: 150 },
 ];
 
-const sumGram = meat.reduce((previousValue, currentValue) =>
+const price = meat.reduce((previousValue, currentValue) =>
     previousValue + (currentValue.gram / 100 * currentValue.per100g)
     , 0);
 
-console.log(sumGram);  // 1720
+console.log(price);  // 1720
 ```
 
 ## link
