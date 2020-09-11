@@ -17,7 +17,7 @@ reduce<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, 
 parameterの説明
 
 * previousValue
-  * 最終的に返さえる値(string,number,Objectなど)、初期値は`initialValue`で定義する
+  * 最終的に返さえる値(string,number,Objectなど)、返す同じ箱のようなもの。初期値は`initialValue`で定義する
 * currentValue
   * 現在処理されている配列の要素
 * currentIndex
