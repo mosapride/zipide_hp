@@ -1,3 +1,8 @@
+---
+title: TypeScript - Array.reduceの使い方メモ
+description: 公式ドキュメントを読んでもいまいちどういう時に使うかわかりにくい。調べてよく使うreduceをメモしておく。
+---
+
 # Array.reduce
 
 mozillaには下記のように説明されている。

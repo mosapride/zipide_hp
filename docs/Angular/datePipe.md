@@ -1,3 +1,8 @@
+---
+title: Angular - DatePipeの使用方法
+description: パイプを使って使用するだけだと思ってたDatePipeだが、transform関数も持ってた。
+---
+
 # DatePipeの使用方法
 
 パイプを使って使用するだけだと思ってたDatePipeだが、transform関数も持ってた。

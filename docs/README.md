@@ -1,6 +1,7 @@
 ---
 home: true
 heroImage: /hero.png
+description: 旧v-kurore.comとmosapride.comを統合したサイト。ブログ形式からドキュメント形式に変更し、同ページを更新していくスタイルに変更。サイト自身の全コードはGitHubに公開してます。ライセンス的にはMITに近いですが、度を起こした転載などはご遠慮ください。引用などを行う場合はhttps://v-kurore.comのリンクを貼ってもらうと喜びます。
 lang: ja
 tagline: 完全に理解したドキュメント
 actionText: TypeScript doc →

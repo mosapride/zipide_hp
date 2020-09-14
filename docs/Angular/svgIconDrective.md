@@ -1,3 +1,8 @@
+---
+title: Angular - SVG Icon表示Directiveを作ってみた
+description: はじめにSVGとはを語ります。AngularのSVG表示Directiveを参考したい場合はスクロールして下に行ってください。またSVGアニメーションについては触れてません。この記事ではIconに焦点を当ててます。
+---
+
 # SVG Icon表示Directiveを作ってみた
 
 ## まずはSVGとは

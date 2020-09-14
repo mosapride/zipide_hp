@@ -1,3 +1,8 @@
+---
+title: Dockerでよく使うコマンド
+description: Dockerコマンドの一覧表ではなく、応用した中で良く使うコマンド。Docker for Windowsの場合はPowerShellを利用刷ることを想定。コマンドプロンプトでは$などの特殊処理を解釈できずに動作しない場合がある。
+---
+
 # Dockerでよく使うコマンド
 
 Docker for Windowsの場合は**PowerShell**を利用刷ることを想定。コマンドプロンプトでは`$`などの特殊処理を解釈できずに動作しない場合がある。

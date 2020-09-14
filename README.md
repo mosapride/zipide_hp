@@ -29,3 +29,27 @@ MIT
 ## ご意見など
 
 [twitter](https://twitter.com/v_kurore)への報告、GithubのIssues,Pull requestsを歓迎してます。
+
+## memo
+
+記事のフォーマットメモ
+
+```md
+---
+title: `Angular|TypeScript|HTMLxxx`など - `タイトル`
+description: description内容の抜粋
+---
+
+# タイトル
+
+description
+
+## リンク集
+
+* [Angular](https://angular.io/)
+
+## h2タグ
+
+h2内容
+
+```

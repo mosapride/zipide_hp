@@ -211,12 +211,7 @@ module.exports = {
     [
       'seo',
       {
-        description: ($page, $site) =>
-          $page.frontmatter.description ||
-          ($page.excerpt &&
-            $page.excerpt.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '')) ||
-          $site.description ||
-          '',
+        description: $page => $page.frontmatter.description,
         title: ($page, $site) => $page.title || $site.title,
         image: ($page, $site) =>
           ($page.frontmatter.image &&

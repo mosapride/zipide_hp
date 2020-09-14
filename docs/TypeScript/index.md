@@ -1,3 +1,8 @@
+---
+title: TypeScript - Introduction
+description: TypeScriptのことを書くドキュメント。JavaScriptで書くより楽。だが面倒な部分もあるのも事実。JavaScriptのメモ的なものも書く。
+---
+
 # Introduction
 
 TypeScriptのことを書くドキュメント。

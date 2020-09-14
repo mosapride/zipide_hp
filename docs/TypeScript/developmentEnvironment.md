@@ -1,3 +1,8 @@
+---
+title: TypeScript - 開発環境構築
+description: 公式通りに設定するとバージョンが固定され使いにくい。nvm経由からインストールすることを勧める。
+---
+
 # 開発環境構築
 
 ## install nvm Windows編
