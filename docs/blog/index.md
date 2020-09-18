@@ -1,5 +1,5 @@
 ---
-title: 日記 - 日記みたいなもの
+title: 日記みたいなもの
 description: 書く。
 ---
 

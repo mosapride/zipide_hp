@@ -7,7 +7,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Kuro doc',
+  title: 'Kuro Doc',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -128,8 +128,9 @@ module.exports = {
             'vscode',
             'ngnew',
             'styleCoding',
-            'class_style.md',
+            'class_style',
             'bindingInput',
+            'httpclient',
             'datePipe',
             'outerScript',
             'svgIconDrective',
@@ -212,7 +213,30 @@ module.exports = {
       'seo',
       {
         description: $page => $page.frontmatter.description,
-        title: ($page, $site) => $page.title || $site.title,
+        title: ($page, $site) => {
+          // console.log($page.regularPath, $page.title || $site.title);
+          var title = '';
+          if ($page.regularPath.indexOf('/TypeScript') === 0) {
+            title = 'TypeScript';
+          }
+          if ($page.regularPath.indexOf('/Angular') === 0) {
+            title = 'Angular';
+          }
+          if ($page.regularPath.indexOf('/blog') === 0) {
+            title = 'blog';
+          }
+          if ($page.regularPath.indexOf('/dockerLinux') === 0) {
+            title = 'Docker & Linux';
+          }
+          if ($page.regularPath.indexOf('/htmlcss') === 0) {
+            title = 'HTML + CSS';
+          }
+          if (title === '') {
+            return '完全に理解したドキュメント | Kuro Doc '
+          }else {
+            return $page.title + ' | Koro Doc + ' +  title;
+          }
+        },
         image: ($page, $site) =>
           ($page.frontmatter.image &&
             ($site.themeConfig.domain || '') + $page.frontmatter.image) ||

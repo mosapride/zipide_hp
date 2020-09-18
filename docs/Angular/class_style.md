@@ -1,9 +1,9 @@
 ---
-title: Angular - [class]と[class.xxxx]の違い
+title: classとclass.xxxxの違い
 description: 前章でスタイルのコーディング規約を記述したが、[class]と[class.xxxx]の仕様を確認しておく。
 ---
 
-# [class]と[class.xxxx]の違い
+# classとclass.xxxxの違い
 
 前章でスタイルのコーディング規約を記述したが、`[class]`と`[class.xxxx]`の仕様を確認しておく。
 

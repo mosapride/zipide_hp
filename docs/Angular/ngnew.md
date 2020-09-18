@@ -1,5 +1,5 @@
 ---
-title: Angular - npxでng new
+title: npxでng new
 description: npmではなくnpxコマンドでngコマンドを実行し、angularプロジェクトを作成する。
 ---
 

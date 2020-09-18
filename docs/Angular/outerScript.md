@@ -1,5 +1,5 @@
 ---
-title: Angular - jQueryを使用する - declare使用例
+title: jQueryを使用する - declare使用例
 description: 本来外部モジュールはnpm install hogehogeでインストールを行えばComponentで使用できるようになるが、CDNやインストールしないタイプのモジュールでは使用できない。
 ---
 

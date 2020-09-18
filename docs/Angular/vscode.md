@@ -1,5 +1,5 @@
 ---
-title: Angular - VS Codeの拡張機能とデバック設定
+title: VS Codeの拡張機能とデバック設定
 description: Angularプロジェクトを快適にコーディングするためのVS Codeの拡張機能とデバック設定について
 ---
 

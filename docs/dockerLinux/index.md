@@ -1,5 +1,5 @@
 ---
-title: DockerやLinux - Introduction
+title: Introduction
 description: について書く。
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: TypeScript - 開発環境構築の前に
+title: 開発環境構築の前に
 description: TypeScriptの開発環境を構築する前に事前に知っておきたい情報を記載する。後から開発環境の作り直しを無くすために必要。
 ---
 
