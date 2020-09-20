@@ -126,6 +126,7 @@ module.exports = {
           children: [
             '',
             'vscode',
+            'showCode',
             'ngnew',
             'styleCoding',
             'class_style',
