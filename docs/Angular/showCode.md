@@ -1,6 +1,6 @@
 ---
 title: ドキュメントAPIからコードに飛ぶ
-description: description内容の抜粋
+description: Angular公式ドキュメントにはAPIも記載されている。が、意味がわからない場合が多い。ドキュメントよりコードを見たい方が早い場合もあるから。
 ---
 
 # ドキュメントAPIからコードに飛ぶ
