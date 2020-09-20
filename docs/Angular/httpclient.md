@@ -32,11 +32,12 @@ getメソッドの実態のコードを見てみる。
   }
 ```
 
-型情報が大雑把で`any`も使っているが、これは10以上のgetメソッドをオーバーロードしているから。
+型情報が大雑把で`any`も使っているが、これは10以上のメソッドをオーバーロードしているから。
 
-### jsonをリクエストするgetソース
+### getの戻り値
 
-jsonを取得する場合(`responseType: 'json'`)でもいくつか記述方法が存在する。うち**オーバーロードされた３つのソース**をピックアップしてみた。
+`responseType?: 'arraybuffer'|'blob'|'json'|'text'`に記述されている通り、**データ形式は4つ**ある。その中でもよく使うであろう
+jsonを取得する場合(`responseType: 'json'`)でもいくつか記述方法が存在する。**オーバーロードされた３つのソース**をピックアップしてみた。
 
 ```ts{3,6,12,15,21,24}
   get(url: string, options?: {
@@ -134,9 +135,37 @@ export class HttpStatusTestService {
 }
 ```
 
+戻り値はresponseTypeとobserveにより変化することを覚えておいてほしい。`HttpEvent`、`HttpResponse`の型定義は`@angular/common/http`に存在する
+
+```ts
+import { HttpClient, HttpEvent, HttpResponse } from '@angular/common/http';
+```
+
+| responseType | observe  | 戻り値                                       |
+|--------------|----------|-------------------------------------------|
+| arraybuffer  | body     | Observable\<ArrayBuffer\>                 |
+| arraybuffer  | response | Observable\<HttpResponse\<ArrayBuffer\>\> |
+| arraybuffer  | events   | Observable\<HttpEvent\<ArrayBuffer\>\>    |
+| blob         | body     | Observable\<Blob\>                        |
+| blob         | response | Observable\<HttpResponse\<Blob\>\>        |
+| blob         | events   | Observable\<HttpEvent\<Blob\>\>           |
+| json         | body     | Observable\<Object\>                      |
+| json         | response | Observable\<HttpResponse\<Object\>\>      |
+| json         | events   | Observable\<HttpEvent\<Object\>\>         |
+| text         | body     | Observable\<string\>                      |
+| text         | response | Observable\<HttpResponse\<string\>\>      |
+| text         | events   | Observable\<HttpEvent\<string\>\>         |
+
+※Objectはジェネリクス`T`により型を設定できる。
+
+**オーバーロードされていること、パラメーターにより戻り値が変わること**を理解すればコーディングができる。
+`post`、`put`、`delete`などのメソッドも似たコードになっている。**IDE上ではオーバーロードされた情報が表示されるためすっごく見にくい**のでコードを見ることをお勧めする。
+
+[https://github.com/angular/angular/blob/master/packages/common/http/src/client.ts](https://github.com/angular/angular/blob/master/packages/common/http/src/client.ts)
+
 ## HTTPステータスによる動作の確認
 
-※subscribeに注力するためにサービス定義をしないコーディングをしている。本来はサービスを実装・仕様によりエラーハンドラを設定するべき。
+※下記サンプルコードはsubscribeに注力するためにサービス定義をしないコーディングをしている。本来はサービスを実装・仕様によりエラーハンドラを設定するべき。
 
 まずはsubscribeの処理の確認から。subscribeでは、正常処理、エラー、完了通知に分けることができる。なお**エラーと完了通知はコーディング省略可能**。これらの処理は**HTTPレスポンスステータスコードにより処理の流れが変わる**。
 
@@ -154,18 +183,81 @@ export interface Config {
       .get<Config>('http://localhost:8080/config', { observe: 'body' })
       .subscribe(
         (value) => {},                     // 1.正常処理
-        (error : HttpErrorResponse) => {}, // 2.エラー
-        () => {}                           // 3.完了通知
+        (error : HttpErrorResponse) => {}, // 2.エラー(省略可能)
+        () => {}                           // 3.完了通知(省略可能)
       );
   }
 ```
 
-|HTTP Status Code|処理順|
-|---|---|
-|情報レスポンス(100-199)|2.エラー|
-|成功レスポンス (200–299)|1.正常処理 → 3.完了通知|
-|リダイレクト (300–399)|2.エラー|
-|クライアントエラー (400–499)|2.エラー|
-|サーバエラー (500–599)|2.エラー|
+| HTTP Status Code    | 処理順             |
+|---------------------|-----------------|
+| 情報レスポンス(100-199)    | 2.エラー           |
+| 成功レスポンス (200–299)   | 1.正常処理 → 3.完了通知 |
+| リダイレクト (300–399)    | 2.エラー           |
+| クライアントエラー (400–499) | 2.エラー           |
+| サーバエラー (500–599)    | 2.エラー           |
 
 つまり、成功レスポンスと、それ以外で分けることができる。
+
+### responseTypeの使い分け方
+
+| responseType | 用途                                |
+|--------------|-----------------------------------|
+| arraybuffer  | 固定長のバイナリーデータのバッファを示すために使われるデータタイプ |
+| blob         | ファイルに似たオブジェクトで、immutable な生データ    |
+| json         | jsonデータ                           |
+| text         | text                              |
+
+よく使うのは`json`。arraybutterとblobはよくわからない。バイナリやファイルをHttpClientで取得するのがベストなのか？
+
+### observeの使い分け
+
+| observe  | 用途                 |
+|----------|--------------------|
+| body     | リクエストしたデータのみ欲しい場合  |
+| response | HttpResponseが欲しい場合 |
+| events   | HttpEventが欲しい場合    |
+
+[HttpResponse](https://angular.io/api/common/http/HttpResponse)は`body`であるリクエストしたデータも含まれている。取得するには`HttpResponse.body`となる。
+
+```ts
+  debug(): void {
+    this.httpClient
+      .get<Config>('http://localhost:8080/config', { observe: 'response' })
+      .subscribe(
+        (value : HttpResponse<Config>) => {
+          console.log(value.status); // 正常処理であるコードステータス(200～299)
+          console.log(value.body);   // レスポンスデータ
+        },
+        (error : HttpErrorResponse) => {},
+        () => {}
+      );
+  }
+```
+
+[HttpEvent](https://angular.io/api/common/http/HttpEvent)は複数のデータ型の定義となる。コードを見てみるとすぐわかる。
+
+```ts
+type HttpEvent<T> = HttpSentEvent | HttpHeaderResponse | HttpResponse<T> | HttpProgressEvent | HttpUserEvent<T>;
+```
+
+`HttpEvent`がどの型なのか`type`により調査しなければならない。
+
+```ts
+import { HttpClient ,HttpEventType } from '@angular/common/http';
+
+  debug(): void {
+    this.httpClient
+      .get<Config>('http://localhost:8080/config', { observe: 'response' })
+      .subscribe(
+        (value : HttpEvent<Config>) => {
+          if (value.type === HttpEventType.Response) {  // typeを検査した後に処理を行う。
+            // HttpResponseと確定される
+            this.responseJson = data.body;
+          }
+        },
+        (error : HttpErrorResponse) => {},
+        () => {}
+      );
+  }
+```
