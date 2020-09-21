@@ -7,6 +7,8 @@ description: パイプを使って使用するだけだと思ってたDatePipe�
 
 パイプを使って使用するだけだと思ってたDatePipeだが、transform関数も持ってた。
 
+<google-ads/>
+
 ## パイプを使った使用方法
 
 nowDateはDate型の変数。フォーマット指定することによりいろんな表記方法が可能。

@@ -7,6 +7,8 @@ description: Angular公式ドキュメントにはAPIも記載されている。
 
 Angular公式ドキュメントにはAPIも記載されている。が、意味がわからない場合が多い。ドキュメントよりコードを見たい方が早い場合もあるから。
 
+<google-ads/>
+
 ## 見方
 
 REFERENCE - API Referenceに飛び、みたいAPIを表示する。

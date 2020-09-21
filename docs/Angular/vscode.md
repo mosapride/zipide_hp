@@ -7,6 +7,8 @@ description: Angularプロジェクトを快適にコーディングするため
 
 Angularプロジェクトを快適にコーディングするためのVS Codeの拡張機能とデバック設定について
 
+<google-ads/>
+
 ## 拡張機能
 
 * [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)

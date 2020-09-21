@@ -15,6 +15,8 @@ viewBoxと言うCSSで言うキャンバス内に座標指定したポイント�
 
 また、<span class="red-under">条件により</span>色の変化を動的に行うことができる。
 
+<google-ads/>
+
 ### Homeの例
 
 下記のソースはHomeの絵。参考元：[https://material.io/resources/icons/?icon=home&style=baseline](https://material.io/resources/icons/?icon=home&style=baseline)

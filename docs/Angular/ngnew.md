@@ -7,6 +7,8 @@ description: npmではなくnpxコマンドでngコマンドを実行し、angul
 
 npmではなくnpxコマンドでngコマンドを実行し、angularプロジェクトを作成する。
 
+<google-ads/>
+
 ## 公式ではグローバルインストールしている
 
 [angular.io](https://angular.io)のドキュメントでは`npm install -g @angular/cli`と記載されてるが、Angular CLIで作られたプロジェクトには`angular/cli`がインストールされてる。
