@@ -212,6 +212,9 @@ export interface Config {
 
 よく使うのは`json`。arraybutterとblobはよくわからない。バイナリやファイルをHttpClientで取得するのがベストなのか？
 
+ちなみに`responseType`で指定されたデータ型をが**レスポンスとして必ず取得できる訳ではない**。APIサーバーは`responseType`の情報を受け取らないためAPIサーバーの仕様通りのレスポンスを返す。
+`responseType`はクライアント側でのコーディングを明示的に行うための記述であることに注意が必要である。
+
 ### observeの使い分け
 
 | observe  | 用途                 |
@@ -220,16 +223,34 @@ export interface Config {
 | response | HttpResponseが欲しい場合 |
 | events   | HttpEventが欲しい場合    |
 
-[HttpResponse](https://angular.io/api/common/http/HttpResponse)は`body`であるリクエストしたデータも含まれている。取得するには`HttpResponse.body`となる。
+リクエストデータのみを取得したい場合は`observe:'body'`を指定する。
 
 ```ts
   debug(): void {
     this.httpClient
-      .get<Config>('http://localhost:8080/config', { observe: 'response' })
+      .get<Config>('http://localhost:8080/config', { observe: 'body' , responseType : 'json' })
+      .subscribe(
+        (value : Config) => {
+          console.log(value);   // レスポンスデータ。ここではConfigのJSONデータ
+        },
+        (error : HttpErrorResponse) => {},
+        () => {}
+      );
+  }
+```
+
+[HttpResponse](https://angular.io/api/common/http/HttpResponse)が欲しい場合は`observe:'response'`を指定する。
+HttpResponseはリクエストデータ情報の他に、headers情報、statusなど情報を使いたい場合に使用する。
+`HttpResponse.body`からリクエストデータを取得することができる。
+
+```ts
+  debug(): void {
+    this.httpClient
+      .get<Config>('http://localhost:8080/config', { observe: 'response' , responseType : 'json' })
       .subscribe(
         (value : HttpResponse<Config>) => {
-          console.log(value.status); // 正常処理であるコードステータス(200～299)
-          console.log(value.body);   // レスポンスデータ
+          console.log(value.status); // 正常処理であるコードステータス(大抵は200)
+          console.log(value.body);   // レスポンスデータ。ここではConfigのJSONデータ
         },
         (error : HttpErrorResponse) => {},
         () => {}
@@ -250,12 +271,13 @@ import { HttpClient ,HttpEventType } from '@angular/common/http';
 
   debug(): void {
     this.httpClient
-      .get<Config>('http://localhost:8080/config', { observe: 'response' })
+      .get<Config>('http://localhost:8080/config', { observe: 'events' ,responseType : 'json'})
       .subscribe(
         (value : HttpEvent<Config>) => {
           if (value.type === HttpEventType.Response) {  // typeを検査した後に処理を行う。
             // HttpResponseと確定される
-            this.responseJson = data.body;
+          console.log(value.status); // 正常処理であるコードステータス(大抵は200)
+          console.log(value.body);   // レスポンスデータ。ここではConfigのJSONデータ
           }
         },
         (error : HttpErrorResponse) => {},

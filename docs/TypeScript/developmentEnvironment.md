@@ -53,6 +53,8 @@ PS C:\> node -v
 v12.18.3
 ```
 
+<google-ads/>
+
 ## install nvm macOS、Linux編
 
 [nvm-sh/nvm](https://github.com/nvm-sh/nvm)を利用した例の紹介。

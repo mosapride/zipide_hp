@@ -11,6 +11,8 @@ node.js + TypeScript + VS Code + eslint + prettierを使ってNode.js API Server
 
 Microsoftがgithubで公開している[TypeScript-Node-Starter](https://github.com/Microsoft/TypeScript-Node-Starter)もある。安定を求めるなら大企業が公開している雛形プロジェクトを使用するほうが無難。
 
+<google-ads/>
+
 ## 主な開発構成
 
 * Editor

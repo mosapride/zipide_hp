@@ -11,6 +11,8 @@ mozillaには下記のように説明されている。
 
 配列に対して値(number,string,Objectなど)を返す。
 
+<google-ads/>
+
 ## 型宣言
 
 ```ts
