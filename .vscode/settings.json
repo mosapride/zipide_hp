@@ -9,6 +9,7 @@
   ],
   "cSpell.enableFiletypes": [
     "!javascript",
-    "!json"
+    "!json",
+    "!markdown"
   ]
 }

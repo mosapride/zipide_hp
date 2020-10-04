@@ -11,7 +11,7 @@ Dockerコマンドの一覧表ではなく、応用した中で良く使うコ�
 
 ## 停止中のコンテナを削除
 
-```plaintext
+```atom
 docker rm  $(docker ps -f status=exited -q)
 ```
 
@@ -19,7 +19,7 @@ docker rm  $(docker ps -f status=exited -q)
 
 **使用に注意が必要**。起動中のコンテナも含めすべて削除する。`rm -f`の`-f`はコンテナをSIGKILLを送り停止させ削除する。
 
-```plaintext
+```atom
 docker rm -f $(docker ps -a -q)
 ```
 
@@ -27,7 +27,7 @@ docker rm -f $(docker ps -a -q)
 
 buildエラーなどで`<none>`状態になっているimageを削除する。
 
-```plaintext
+```atom
 docker rmi $(docker images -f "dangling=true" -q)
 ```
 
@@ -35,19 +35,19 @@ docker rmi $(docker images -f "dangling=true" -q)
 
 コンテナが使用していないimageを削除する。
 
-```plaintext
+```atom
 docker image prune -a
 ```
 
 ## 停止しているコンテナ情報を出力
 
-```plaintext
+```atom
 docker ps -f status=exited
 ```
 
 CONTAINER IDのみ出力する場合は`-q`オプションを付ける。
 
-```plaintext
+```atom
 docker ps -f status=exited -q
 ```
 
@@ -55,13 +55,13 @@ docker ps -f status=exited -q
 
 下記の例では`keyword`の文字列が入ったコンテナ情報を出力する。test_keyword_container、hoge_keyword_containerなどコンテナ名が部分一致したコンテナ名となる。
 
-```plaintext
+```atom
 docker ps -f "name=keyword"
 ```
 
 CONTAINER IDのみ出力する場合は`-q`オプションを付ける。
 
-```plaintext
+```atom
 docker ps -f "name=keyword" -q
 ```
 
@@ -71,6 +71,6 @@ docker ps -f "name=keyword" -q
 
 例えば、`test`をテスト用コンテナは必ず付けるとします。test-web-server、test-databaseなど複数コンテナが存在しる場合で消す時に役に立つ。
 
-```plaintext
+```atom
 docker rm $(docker ps -f "name=test")
 ```

@@ -15,14 +15,14 @@ description: 公式通りに設定するとバージョンが固定され使い�
 
 再起動後、コマンドプロンプトまたはPowerShellを起動し、`nvm version`を実行し、バージョンが表示されれば成功。
 
-```plaintext
+```atom
 PS C:\> nvm version
 1.1.7
 ```
 
 今の状態ではnvmがインストールされた状態であり、node.jsは未インスール状態である。node.jsをインストールを行うために`nvm list available`コマンドを利用しインストール可能なバージョンを確認する。
 
-```plaintext
+```atom
 PS C:\> nvm list available
 
 |   CURRENT    |     LTS      |  OLD STABLE  | OLD UNSTABLE |
@@ -36,19 +36,19 @@ PS C:\> nvm list available
 
 この場合はv12.18.3がLTSの最新版だと言うことがわかる。インストールには`nvm install バージョン`を実行する。
 
-```plaintext
+```atom
 nvm install 12.18.3
 ```
 
 インストール後、`nvm use バージョン`を実行する。これはデフォルトで実行するnode.jsのバージョンを指定するためのもの。
 
-```plaintext
+```atom
 nvm use 12.18.3
 ```
 
 最後に`node -v`コマンドで正常にインストールされたか確認を行う。
 
-```plaintext
+```atom
 PS C:\> node -v
 v12.18.3
 ```
@@ -69,7 +69,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 PATHを通すために`~/.bash_profile`を作成しexport文を追加する。
 
-```plaintext
+```atom
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
@@ -106,7 +106,6 @@ nvm alias default v12.18.3
 $ node -v
 v12.18.3
 ```
-
 
 ## TypeScript
 
@@ -148,4 +147,3 @@ package.jsonのscriptタグ無いに`"tsc": "tsc"`を追加する。
 $ npm run tsc -v
 6.14.6
 ```
-

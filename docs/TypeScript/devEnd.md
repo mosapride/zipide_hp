@@ -49,7 +49,7 @@ Webサーバ(API Server含む)などの常駐するプロセスのための開�
 
 任意のディレクトリにワークスペースを作成し、VS Codeで開く。
 
-```plaintext
+```atom
 mkdir workspace
 code workspace
 ```
@@ -99,11 +99,11 @@ VS Codeの拡張機能を統一化するために記載していが手動でイ�
 }
 ```
 
-### setting.json
+### settings.json
 
-`setting.json`はユーザー設定の上書きをするために使用する。`.vscode/setting.json`に記載された設定は、そのワークスペースのみ有効となるため、グローバル設定の汚染を防ぐ目的や、プロジェクト管理内に設定情報を保存することにより設定差違を防ぐ目的を持つ。
+`settings.json`はユーザー設定の上書きをするために使用する。`.vscode/settings.json`に記載された設定は、そのワークスペースのみ有効となるため、グローバル設定の汚染を防ぐ目的や、プロジェクト管理内に設定情報を保存することにより設定差違を防ぐ目的を持つ。
 
-`.vscode/setting.json`
+`.vscode/settings.json`
 
 ```json
 {
@@ -126,7 +126,7 @@ VS Codeの拡張機能を統一化するために記載していが手動でイ�
 
 空のpackage.jsonを作成する。
 
-```plaintext
+```atom
 npm init -y
 ```
 
@@ -136,7 +136,7 @@ git管理をしない場合はこの項目は不要
 
 ### git初期化
 
-```plaintext
+```atom
 git init
 ```
 
@@ -146,7 +146,7 @@ git init
 
 `.gitignore`
 
-```text
+```atom
 # OS X
 .DS_Store*
 Icon?
@@ -363,7 +363,7 @@ npm run eslint -- --init
 
 各種の説明
 
-```text
+```json
 {
   "root": true,
   "env": {
@@ -403,7 +403,7 @@ npm run eslint -- --init
 
 `.eslintignore`
 
-```plaintext
+```atom
 # /node_modules/* in the project root is ignored by default
 # build artefacts
 dist/*
