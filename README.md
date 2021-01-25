@@ -20,6 +20,19 @@ npm run build
 
 `hp/docs/.vuepress/dist`にSSG後のHTMLファイル郡が出力される。
 
+## release
+
+サーバーのwpコンテナにログイン
+
+```bash
+docker exec -it wp bash
+```
+
+```bash
+cd 
+./renew.sh
+```
+
 ## License
 
 MIT
