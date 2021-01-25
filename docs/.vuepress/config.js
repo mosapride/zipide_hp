@@ -116,6 +116,7 @@ module.exports = {
             'devEnd',
             'classConstractor',
             'arrayReduce',
+            'arraySort'
           ],
         },
       ],
