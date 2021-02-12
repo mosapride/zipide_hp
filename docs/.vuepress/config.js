@@ -13,6 +13,8 @@ module.exports = {
    */
   description: description,
 
+  port: 9090,
+
   // lang: 'ja',
   locales: {
     '/': {
@@ -87,6 +89,10 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
+        text: '箱庭Doc',
+        link: '/hako/',
+      },
+      {
         text: 'TypeScript',
         link: '/TypeScript/',
       },
@@ -105,6 +111,16 @@ module.exports = {
       },
     ],
     sidebar: {
+      '/hako/': [
+        {
+          title: '箱庭Doc',
+          collapsable: false,
+          children: [
+            '',
+            'about'
+          ],
+        },
+      ],
       '/TypeScript/': [
         {
           title: 'TypeScript',
@@ -218,6 +234,9 @@ module.exports = {
         title: ($page, $site) => {
           // console.log($page.regularPath, $page.title || $site.title);
           var title = '';
+          if ($page.regularPath.indexOf('/hako') === 0) {
+            title = '箱庭Doc';
+          }
           if ($page.regularPath.indexOf('/TypeScript') === 0) {
             title = 'TypeScript';
           }
@@ -235,15 +254,15 @@ module.exports = {
           }
           if (title === '') {
             return '完全に理解したドキュメント | Kuro Doc '
-          }else {
-            return $page.title + ' | Koro Doc + ' +  title;
+          } else {
+            return $page.title + ' | Koro Doc + ' + title;
           }
         },
         image: ($page, $site) =>
           ($page.frontmatter.image &&
             ($site.themeConfig.domain || '') + $page.frontmatter.image) ||
           'http://placehold.jp/26/525252/ffffff/600x315.png?css=%7B%22background-image%22%3A%22%20url(https%3A%2F%2Fv-kurore.com%2Ffavicons%2Ffavicon180x180.png)%22%2C%22background-position%22%3A%22%20right%20bottom%22%2C%22background-repeat%20%20%22%3A%22%20no-repeat%22%7D&&text=' +
-            encodeURIComponent($page.title || $site.title),
+          encodeURIComponent($page.title || $site.title),
       },
     ],
   ],

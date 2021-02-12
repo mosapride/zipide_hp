@@ -44,7 +44,7 @@ JavaScriptに変換するルールはtsconfig.jsonに記載する。tsconfig.jso
 フレームワークを利用する場合がほとんどだと思うが、その場合はスケルトンを作成するツールが存在する場合が多い。素直にスケルトンを利用することにより**開発環境構築作業を削減することができる**。
 
 ::: tip tsc
-TypeScript compilerの略。TypeScriptコードをJavaScriptコードに変換を行う。型チェッカー(typechecker)を実行し、型の不正を検知したりするがIDEが警告してくれる。コンパイルと聞くと最適化を行ってくれると思うがtscはトランスコンパイラなため最適化する訳ではないため処理スピードの向上などがしないと思って良い。
+TypeScript compilerの略。TypeScriptコードをJavaScriptコードに変換を行う。型チェッカー(typechecker)を実行し、型の不正を検知したりするがIDEが警告してくれる。コンパイルと聞くと最適化を行ってくれると思うがtscは正確にはトランスコンパイラと言う。最適化する訳ではないため処理スピードの向上などがしないと思って良い。
 :::
 
 ::: tip トランスコンパイラ
@@ -55,7 +55,7 @@ TypeScript compilerの略。TypeScriptコードをJavaScriptコードに変換�
 
 ### JavaScriptは無くならない
 
-TypeScriptは大きなプロジェクトでは非常に強力な言語だが、数行のJavaScriptコードをTypeScriptで開発するメリットはない。
+TypeScriptは大きなプロジェクトでは非常に強力な言語だが、**数行のJavaScriptコードをTypeScriptで開発するメリットはない**。
 
 ### TypeScript以外にも学習が必要
 

@@ -22,6 +22,8 @@ npm run build
 
 ## release
 
+**俺用**。
+
 サーバーのwpコンテナにログイン
 
 ```bash
