@@ -117,7 +117,9 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'about'
+            'profile',
+            'minecraft',
+            'minecraft-term'
           ],
         },
       ],

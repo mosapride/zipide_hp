@@ -56,16 +56,25 @@ description: description内容の抜粋
 ---
 ```
 
-# タイトル
+### タイトルの書き方
 
 description
 
-## リンク集
+### リンクの書き方
 
 * [Angular](https://angular.io/)
 
-## h2タグ
+### イメージ画像
 
-h2内容
+```md
+貼り付け
+<img :src="$withBase('/images/hako/profile.png')" alt="TypeScriptとJavaScriptの実行イメージ">
+または
+![TypeScriptとJavaScriptの実行イメージ](/images/hako/profile.png)
 
+枠付き
+<img class="border" :src="$withBase('/images/hako/skin03.png')" alt="skin変更手順3">
 ```
+
+
+
