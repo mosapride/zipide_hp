@@ -141,9 +141,8 @@ package.jsonのscriptタグ無いに`"tsc": "tsc"`を追加する。
 }
 ```
 
-`npm run tsc -v`を実行しバージョンが表示されれば大丈夫。
+`npm run tsc -- -v`を実行しバージョンが表示されれば大丈夫。
 
 ```bash
-$ npm run tsc -v
-6.14.6
+$ npm run tsc -- -v
 ```
