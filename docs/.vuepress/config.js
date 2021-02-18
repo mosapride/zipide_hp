@@ -119,7 +119,9 @@ module.exports = {
             '',
             'profile',
             'minecraft',
-            'minecraft-term'
+            'minecraft-term',
+            'minecraft-mod',
+            'change-skin',
           ],
         },
       ],

@@ -11,6 +11,7 @@
   "repository": "/kurore_hp",
   "scripts": {
     "start": "npm run dev",
+    "start:dev": "npm run dev",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
