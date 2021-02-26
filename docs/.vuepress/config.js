@@ -177,7 +177,7 @@ module.exports = {
         {
           title: 'blog',
           collapsable: false,
-          children: ['', 'fledglingEngineer'],
+          children: ['', 'fledglingEngineer' , 'server'],
         },
       ],
     },
