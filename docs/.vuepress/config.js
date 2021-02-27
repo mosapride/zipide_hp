@@ -3,6 +3,8 @@ const { description } = require('../../package');
 const { Base64 } = require('js-base64');
 const uslugify = (s) => Base64(s);
 
+const url = "https://v-kurore.com/";
+
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -177,7 +179,7 @@ module.exports = {
         {
           title: 'blog',
           collapsable: false,
-          children: ['', 'fledglingEngineer' , 'server'],
+          children: ['', 'fledglingEngineer', 'server'],
         },
       ],
     },
@@ -209,6 +211,12 @@ module.exports = {
     '@vuepress/medium-zoom',
     'vuepress-plugin-smooth-scroll',
     'vuepress-plugin-redirect',
+    ["sitemap",
+      {
+        hostname: "https://v-kurore.com",
+        changefreq: "weekly"
+      },
+    ],
     [
       '@vuepress/search',
       {
