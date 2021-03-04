@@ -179,7 +179,7 @@ module.exports = {
         {
           title: 'blog',
           collapsable: false,
-          children: ['', 'fledglingEngineer', 'server'],
+          children: ['', 'fledglingEngineer', 'server' , 'oauth'],
         },
       ],
     },
