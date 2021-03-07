@@ -158,6 +158,7 @@ module.exports = {
             'datePipe',
             'outerScript',
             'svgIconDrective',
+            'ogp'
           ],
         },
       ],
