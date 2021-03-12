@@ -23,6 +23,8 @@ Minecraft マルチサーバーを用意しています。
 
 <!-- <img :src="$withBase('/images/hako/hakoniwa-minecraft.png')" alt="箱庭サーバー"> -->
 
+<google-ads/>
+
 ## 利用するには
 
 <img :src="$withBase('/images/hako/minecraft-java-edition.png')" alt="箱庭サーバー">

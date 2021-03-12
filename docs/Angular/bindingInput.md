@@ -26,6 +26,8 @@ description: 即時文字入力チェックを行うパターン。`(input) even
   }
 ```
 
+<google-ads/>
+
 ## アンチパターン
 
 `$event.target.value`を使わずに`ngModel`で双方向bindした値をチェックする方法も一見よさそうだが、全角文字入力→決定(Enter)時で文字が確定された時点で`input event`が発火されないため、未チェックになる可能性がある。

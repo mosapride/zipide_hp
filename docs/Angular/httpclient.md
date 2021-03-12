@@ -285,3 +285,5 @@ import { HttpClient ,HttpEventType } from '@angular/common/http';
       );
   }
 ```
+
+<google-ads/>

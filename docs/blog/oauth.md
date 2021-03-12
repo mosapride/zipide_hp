@@ -7,6 +7,8 @@ description: Google APIを利用する場合に、Youtubeビデオの提出を�
 
 Google APIを利用する場合に、Youtubeビデオの提出を求められて面倒だったので参考程度に残しておく。
 
+<google-ads/>
+
 ## 参考サイトになったサイト
 
 - [GoogleのOAuth審査に苦労した話 | チョコボのメモちょう](https://ff14chocopad.com/archives/google-oauth.html)

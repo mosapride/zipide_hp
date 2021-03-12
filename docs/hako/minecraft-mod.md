@@ -11,6 +11,8 @@ description: 箱庭Minecraftで遊ぶ場合のModについて
 
 便利なMODがあれば教えて下さい。
 
+<google-ads/>
+
 ## おすすめMOD
 
 おすすめMODと導入の仕方についてです。気が向いたら追加していきます。
@@ -70,3 +72,5 @@ OptiFine Installerが起動されるので、Install ボタンを押します。
 Minecraftを起動し、OptiFineが表示されていれば成功です。
 
 <img class="border" :src="$withBase('/images/hako/optifine07.png')">
+
+<google-ads/>
