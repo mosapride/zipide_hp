@@ -3,7 +3,7 @@ title: Typescriptでバックエンド側 開発環境する
 description: node.js + TypeScript + VS Code + eslint + prettierを使ってNode.js API Server + front-end projectの開発環境構築を行う。ここではWebフレームワークにexpressを使用しているが他のWebフレームワークでも問題ない。
 ---
 
-# Typescriptエンド側 開発環境
+# Typescriptでバックエンド側 開発環境する
 
 node.js + TypeScript + VS Code + eslint + prettierを使ってNode.js API Server + back-end projectの開発環境構築を行う。
 
