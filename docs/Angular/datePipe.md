@@ -7,7 +7,9 @@ description: パイプを使って使用するだけだと思ってたDatePipe�
 
 パイプを使って使用するだけだと思ってたDatePipeだが、transform関数も持ってた。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## パイプを使った使用方法
 

@@ -26,7 +26,9 @@ description: 即時文字入力チェックを行うパターン。`(input) even
   }
 ```
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## アンチパターン
 

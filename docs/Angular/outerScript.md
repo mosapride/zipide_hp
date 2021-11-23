@@ -7,7 +7,9 @@ description: 本来外部モジュールはnpm install hogehogeでインスト�
 
 本来外部モジュールは`npm install hogehoge`でインストールを行えばComponentで使用できるようになるが、CDNやインストールしないタイプのモジュールでは使用できない。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## インストール
 

@@ -11,7 +11,9 @@ description: 箱庭Minecraft Java Editionの利用条件。
 
 [Minecraft Skins](https://www.minecraftskins.com/)を利用することにより簡単にオリジナルのスキンを作成することができます。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 
 ## スキンの変更手順1
@@ -52,4 +54,6 @@ PCのMinecraft Launcherを起動し、「スキン」タブから変更するこ
 
 <img class="border" :src="$withBase('/images/hako/skin07.png')" alt="skin変更手順7">
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>

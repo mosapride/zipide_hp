@@ -23,7 +23,9 @@ Minecraft マルチサーバーを用意しています。
 
 <!-- <img :src="$withBase('/images/hako/hakoniwa-minecraft.png')" alt="箱庭サーバー"> -->
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## 利用するには
 
@@ -32,7 +34,6 @@ Minecraft マルチサーバーを用意しています。
 [Minecraft Java Edition](https://www.minecraft.net/ja-jp/store/minecraft-java-edition/)が必要です。コンシューマー機器(PS4,Switchなど)には非対応です。  
 ※**Microsoft Storeから購入できるMinecraft for Windows 10も名前が似ていますが、こちらも非対応**です。
 
-<google-ads/>
 
 Minecraftを起動しマルチプレイを選択します。
 

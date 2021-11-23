@@ -7,7 +7,9 @@ description: Google APIを利用する場合に、Youtubeビデオの提出を�
 
 Google APIを利用する場合に、Youtubeビデオの提出を求められて面倒だったので参考程度に残しておく。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## 参考サイトになったサイト
 

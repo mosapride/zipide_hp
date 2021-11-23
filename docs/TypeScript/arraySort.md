@@ -11,7 +11,9 @@ mozillaには下記のように説明されている。
 
 うん。意味がわからん。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 簡単なデモ
 

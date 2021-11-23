@@ -7,7 +7,9 @@ description: APIサーバーとの通信を行うhttpClient。ただの通信を
 
 APIサーバーとの通信を行う`httpClient`。ただの通信を行うだけなのだが、実は中身はかなり複雑で公式ドキュメントの情報量を多い。しかしコーディングする上では分かりにくい。`get`がどのように実装されているのか。どのようにコーディングすればよいのかを理解すれば、その他のメソッドである`post`、`delete`などのメソッドもコーディングしやすくなる。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## Link
 
@@ -286,4 +288,6 @@ import { HttpClient ,HttpEventType } from '@angular/common/http';
   }
 ```
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>

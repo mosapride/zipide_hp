@@ -7,7 +7,9 @@ description: TwitterやFacebook、DiscrodなどにURLを貼ると画像つきリ
 
 対処法だけ見たい人は下にスクロール
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 # AngularでOGP対応の限界と対処
 
@@ -93,7 +95,9 @@ server {
   }
 ```
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## 確認
 

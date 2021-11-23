@@ -7,7 +7,9 @@ description: マイクラサーバーを建てる場合はメモリが重要に�
 
 動いている訳です。現在は[箱庭](https://hako.v-kurore.com)とマイクラサーバーとして運用中。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## 自宅サーバーを立てた経緯
 
@@ -52,7 +54,9 @@ VPSは借りています。が！！マイクラサーバはメモリをたく�
 
 ワットメーターで計測した所、電気代は600円/月と予想より安かった。計測したときは特に負荷を掛けていない状態だったが高負荷時が続いても倍にはならないだろうと思っている。Ryzen 7 1700は定格65Wと使用電力も低く、ストレージもSSDを使用していることが低消費電力の理由だと思う。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## 危惧しているところ
 
@@ -89,4 +93,6 @@ Docker専用と言っても良いOSとしてRed Hatが提供しているRHCOS、
 
 個人ボランティアのみで成り立つLinux、企業による支援があるLinuxなど運用形態は様々ですし開発者の核となる人が離脱することにより大きなサービスが終了することも珍しくありません。ベストな回答を求めることは不可能ですが現状を見るとUbuntuが一番無難かなと結論を出した訳です。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>

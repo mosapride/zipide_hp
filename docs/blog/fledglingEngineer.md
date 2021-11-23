@@ -9,7 +9,9 @@ description: それはゲーミングPC。
 
 以上です。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## この記事の目的
 
@@ -87,7 +89,9 @@ Appleはクローズドであり、新しい技術のためなら下位互換も
 
 PC用のデスクトップアプリの場合は、それぞれのOSでコンパイルすることが前提となる。つまり、Macアプリを作るにはMacが必要であり、WindowsアプリはWindows PCが必要となる。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## おわりに
 

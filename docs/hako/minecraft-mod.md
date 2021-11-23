@@ -11,7 +11,9 @@ description: 箱庭Minecraftで遊ぶ場合のModについて
 
 便利なMODがあれば教えて下さい。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## おすすめMOD
 
@@ -73,4 +75,6 @@ Minecraftを起動し、OptiFineが表示されていれば成功です。
 
 <img class="border" :src="$withBase('/images/hako/optifine07.png')">
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>

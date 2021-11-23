@@ -7,7 +7,9 @@ description: AngularではCSSのスタイル指定方法が複数存在する。
 
 AngularではCSSのスタイル指定方法が複数存在する。その中で乱立させるよりルールを決めた方が可読性が良くなると考えた。コーディング規約っぽいのを自分なりに…
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## コーディング規約
 

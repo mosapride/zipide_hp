@@ -56,6 +56,14 @@ description: description内容の抜粋
 ---
 ```
 
+Google Adsense
+
+```atom
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
+```
+
 ### タイトルの書き方
 
 description

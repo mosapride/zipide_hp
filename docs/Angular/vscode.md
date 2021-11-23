@@ -7,7 +7,9 @@ description: Angularプロジェクトを快適にコーディングするため
 
 Angularプロジェクトを快適にコーディングするためのVS Codeの拡張機能とデバック設定について
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## 拡張機能
 

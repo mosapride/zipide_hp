@@ -11,7 +11,9 @@ mozillaには下記のように説明されている。
 
 配列に対して値(number,string,Objectなど)を返す。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## 型宣言
 

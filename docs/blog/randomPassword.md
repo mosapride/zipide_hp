@@ -35,4 +35,6 @@ require('crypto').randomBytes(1000).toString('base64').replace(/[\/\+\=]/g,'').s
 
 記号を取り除く理由は、プログラミングコードでコーディングを行う場合はエスケープを考慮しないといけない場合があるため。記号を含めたい場合はreplaceを削除すればよい。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>

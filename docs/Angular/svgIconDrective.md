@@ -15,7 +15,9 @@ viewBoxと言うCSSで言うキャンバス内に座標指定したポイント�
 
 また、<span class="red-under">条件により</span>色の変化を動的に行うことができる。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ### Homeの例
 

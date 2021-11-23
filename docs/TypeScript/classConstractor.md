@@ -7,7 +7,9 @@ description: コンストラクターの引数に対するアクセス修飾子�
 
 コンストラクターの引数に対するアクセス修飾子の有無による挙動の違い。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## アクセス修飾子
 

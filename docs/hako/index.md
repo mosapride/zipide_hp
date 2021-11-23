@@ -10,7 +10,9 @@ description: 箱庭 https://hako.v-kurore.com のドキュメントサイト。
 
 ここは[箱庭](https://hako.v-kurore.com)のドキュメント。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 
 ## 箱庭とは

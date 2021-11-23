@@ -7,7 +7,9 @@ description: npmではなくnpxコマンドでngコマンドを実行し、angul
 
 npmではなくnpxコマンドでngコマンドを実行し、angularプロジェクトを作成する。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## 公式ではグローバルインストールしている
 

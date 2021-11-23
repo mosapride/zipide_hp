@@ -18,7 +18,9 @@ description: 箱庭Minecraft ルールと知ってほしいこと、箱庭鯖で
 7. データが消えたらごめんね
 8. 管理人は放任主義
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## サーバー負荷による禁止行為
 
@@ -83,4 +85,6 @@ description: 箱庭Minecraft ルールと知ってほしいこと、箱庭鯖で
 
 基本放任の方向です。バックアップデータからの巻き戻しも特例を覗いて考えていません。ただし悪意のあるユーザーについてはホワイトリストから削除することはあります。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>

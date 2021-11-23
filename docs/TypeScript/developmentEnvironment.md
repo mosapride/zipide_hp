@@ -53,7 +53,9 @@ PS C:\> node -v
 v12.18.3
 ```
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## install nvm macOS、Linux編
 

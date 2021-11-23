@@ -7,7 +7,9 @@ description: 箱庭でのプロフィール編集
 
 ログイン後に行われるプロフィール編集について
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 1. 退会する
     - データの削除を行い。退会します。
@@ -28,5 +30,7 @@ description: 箱庭でのプロフィール編集
 
 <img :src="$withBase('/images/hako/profile.png')" alt="TypeScriptとJavaScriptの実行イメージ">
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 

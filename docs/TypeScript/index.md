@@ -9,7 +9,9 @@ TypeScriptのことを書くドキュメント。
 
 JavaScriptで書くより楽。だが面倒な部分もあるのも事実。JavaScriptのメモ的なものも書く。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## リンク集
 
