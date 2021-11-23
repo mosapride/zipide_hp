@@ -9,7 +9,9 @@ TypeScriptの開発環境を構築する前に事前に知っておきたい情�
 
 ここではnpm経由のインストールを前提に話す。
 
-<google-ads/>
+<ClientOnly>
+  <CallInFeedAdsense />
+</ClientOnly>
 
 ## インストールの流れ
 
