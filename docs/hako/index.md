@@ -8,7 +8,7 @@ description: 箱庭 https://hako.v-kurore.com のドキュメントサイト。
 <img :src="$withBase('/images/hako/top.png')" alt="TypeScriptとJavaScriptの実行イメージ">
 
 
-ここは[箱庭](https://hako.v-kurore.com)のドキュメント。
+ここは[箱庭](https://freeboll.com)のドキュメント。
 
 <ClientOnly>
   <CallInFeedAdsense />
