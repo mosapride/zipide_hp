@@ -17,7 +17,6 @@ module.exports = {
 
   port: 9090,
 
-  // lang: 'ja',
   locales: {
     '/': {
       lang: 'ja',
@@ -113,6 +112,8 @@ module.exports = {
         {
           title: '箱庭Doc',
           collapsable: false,
+          initialOpenGroupIndex: -1,
+          sidebarDepth: 0,
           children: [
             '',
             'profile',
@@ -127,6 +128,8 @@ module.exports = {
         {
           title: 'TypeScript',
           collapsable: false,
+          initialOpenGroupIndex: -1,
+          sidebarDepth: 0,
           children: [
             '',
             'developmentEnvironmentInfo',
@@ -142,6 +145,8 @@ module.exports = {
         {
           title: 'Angular',
           collapsable: false,
+          initialOpenGroupIndex: -1,
+          sidebarDepth: 0,
           children: [
             '',
             'vscode',
@@ -189,6 +194,12 @@ module.exports = {
   },
   markdown: {
     lineNumbers: true,
+    anchor: {
+      permalink: false
+    },
+    toc: {
+      includeLevel: [1]
+    },
     extendMarkdown: (md) => {
       md.set({ breaks: false });
       md.use(require('markdown-it-imsize'));
