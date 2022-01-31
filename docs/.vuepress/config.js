@@ -3,17 +3,18 @@ const { description } = require('../../package');
 const { Base64 } = require('js-base64');
 const uslugify = (s) => Base64(s);
 
-const url = "https://v-kurore.com/";
+const url = "https://zipide.com/";
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Kuro Doc',
+  title: '自作PC入門。Version 本音',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
+  displayAllHeaders : true,
 
   port: 9090,
 
@@ -78,32 +79,22 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    domain: 'https://v-kurore.com',
-    repo: '',
+    domain: 'https://zipide.com',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
+    search : false,
     nav: [
       {
-        text: '箱庭Doc',
-        link: '/hako/',
-      },
-      {
-        text: 'TypeScript',
-        link: '/TypeScript/',
-      },
-      {
-        text: 'Angular',
-        link: '/Angular/',
+        text: '始める',
+        link: '/docs/',
       },
       {
         text: 'Other',
-        ariaLabel: 'Language Menu',
+        ariaLabel: 'Other',
         items: [
-          { text: 'HTML&CSS', link: '/htmlcss/' },
-          { text: 'Docker&Linux', link: '/dockerLinux/' },
-          { text: 'チラシの裏', link: '/blog/' },
+          { text: 'About', link: '/about/' },
         ],
       },
     ],
@@ -221,7 +212,7 @@ module.exports = {
     'vuepress-plugin-redirect',
     ["sitemap",
       {
-        hostname: "https://v-kurore.com",
+        hostname: "https://zipide.com",
         changefreq: "weekly"
       },
     ],

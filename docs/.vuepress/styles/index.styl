@@ -4,9 +4,88 @@
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
+.custom-h2 
+  font-size: 28px;
+  display: block;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+  color: #1d1d1f;
+  font-family: "SF Pro JP","SF Pro Display","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+
+
+.custom-description
+  display: block;
+  font-weight: 600;
+  font-size: 36px
+  align-items: center;
+  text-align: center;
+  color: #1d1d1f;
+  font-family: "SF Pro JP","SF Pro Display","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+@media only screen and (min-width: 1068px)
+  .custom-description
+    font-size: 56px;
+
+.custon-contents
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+
+.start-btn
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #0071e3;
+  border-radius: 100vh;
+  font-size: 17px;
+  padding : 10px 20px;
+  
+
+.start-btn:hover
+  color: #fff;
+  background-color: #0071e3;
+
+.custom-img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-img-wrap:before {
+  animation: custom-img-wrap 2.5s cubic-bezier(.4, 0, .2, 1) forwards;
+  background: #fff;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes custom-img-wrap {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
 .home .hero img
   max-width 450px !important
 
+.home .hero #main-title
+  color : #222 !important;
+  font-size: 2rem !important;
+  margin : 2px !important;
+
+.home .hero .description
+  max-width: 70rem !important;
+  font-size: 0.75rem !important;
+  color : #666 !important;
+  margin-top: 10px !important;
 
 .theme-default-content:not(.custom) 
   max-width: 1000px;
@@ -59,23 +138,14 @@ main.page img.border
   padding: 5px;
 
 main .theme-default-content h2
-  word-break: normal;
-  overflow-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-  font-family: "segoe ui",meiryo,"yu gothic","hiragino kaku gothic pron",sans-serif;
-  box-sizing: border-box;
+  color: #111827;
   font-weight: 700;
-  margin: 2.5em 0 .7em;
-  line-height: 1.6;
-  font-size: 20px !important;
-  background: rgba(77,161,255,.05);
-  border-bottom: 3px solid #4da1ff;
-  color: #272727;
-  padding: .5em .7em;
-  border-top: none;
+  font-size: 1rem;
+  margin: 3rem 0 2.5rem !important;
+  padding: 1.2rem !important;
+  background-color: #f3f4f6;
+  text-align: center;
 
-main .theme-default-content:not(.custom) h2
 main .theme-default-content:not(.custom) h3
   padding-top: 1rem !important;
   margin-top: 5px;
@@ -88,12 +158,11 @@ main .theme-default-content h3
   -webkit-text-size-adjust: none;
   font-family: "segoe ui",meiryo,"yu gothic","hiragino kaku gothic pron",sans-serif;
   box-sizing: border-box;
-  font-weight: 700;
-  border-color: #6bb6ff;
-  margin: 2.6em 0 .7em;
-  line-height: 1.5;
-  font-size: 20px !important;
-  border-left: 3px solid #7289dc;
+  font-weight: 600;
+  margin: 1.5em 0 .7em;
+  line-height: 1.1;
+  font-size: 1.1rem !important;
+  border-left: 3px solid #666;
   padding: .5em .7em !important;
   color: #272727;
   

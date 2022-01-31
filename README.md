@@ -1,8 +1,8 @@
 # kurore_hp
 
-クロdocのgithubリポジトリ
+**自作PC入門。Version 本音**のホームページ。
 
-[v-kurore.com](https://v-kurore.com)
+- <https://zipide.com>
 
 ## Development
 
@@ -84,5 +84,7 @@ description
 <img class="border" :src="$withBase('/images/hako/skin03.png')" alt="skin変更手順3">
 ```
 
+## Image
 
+* <https://unsplash.com/>
 

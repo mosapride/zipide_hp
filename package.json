@@ -1,14 +1,14 @@
 {
-  "name": "kurore_hp",
+  "name": "zipide_hp",
   "version": "0.0.1",
-  "description": "kuro doc",
+  "description": "zipide hp",
   "engines": {
     "node": "v12.13.1"
   },
   "authors": {
     "name": "kuro"
   },
-  "repository": "/kurore_hp",
+  "repository": "/zipide_hp",
   "scripts": {
     "start": "npm run dev",
     "start:dev": "npm run dev",
