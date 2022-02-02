@@ -64,6 +64,13 @@ module.exports = {
         href: '/favicons/favicon48x48.png',
       },
     ],
+    [
+      'link',
+      {
+       href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+       rel: 'stylesheet'
+      }
+    ],
     ['link', { rel: 'shortcut icon', href: '/favicons/favicon.ico' }],
     ['meta', { charset: 'utf-8' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },],
@@ -99,86 +106,29 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/hako/': [
+      '/docs/': [
         {
-          title: '箱庭Doc',
+          title: '自作PC入門を始める',
           collapsable: false,
           initialOpenGroupIndex: -1,
           sidebarDepth: 0,
           children: [
             '',
-            'profile',
-            'minecraft',
-            'minecraft-term',
-            'minecraft-mod',
-            'change-skin',
           ],
         },
       ],
-      '/TypeScript/': [
+      '/about/': [
         {
-          title: 'TypeScript',
-          collapsable: false,
-          initialOpenGroupIndex: -1,
-          sidebarDepth: 0,
-          children: [
-            '',
-            'developmentEnvironmentInfo',
-            'developmentEnvironment',
-            'devEnd',
-            'classConstractor',
-            'arrayReduce',
-            'arraySort'
-          ],
-        },
-      ],
-      '/Angular/': [
-        {
-          title: 'Angular',
-          collapsable: false,
-          initialOpenGroupIndex: -1,
-          sidebarDepth: 0,
-          children: [
-            '',
-            'vscode',
-            'showCode',
-            'ngnew',
-            'styleCoding',
-            'class_style',
-            'bindingInput',
-            'httpclient',
-            'datePipe',
-            'outerScript',
-            'svgIconDrective',
-            'ogp'
-          ],
-        },
-      ],
-      '/htmlcss/': [
-        {
-          title: 'HTML&CSS',
+          title: 'About',
           collapsable: false,
           children: [''],
         },
       ],
-      '/dockerLinux/': [
-        {
-          title: 'Docker&Linux',
-          collapsable: false,
-          children: ['', 'command'],
-        },
-      ],
-      '/blog/': [
-        {
-          title: 'blog',
-          collapsable: false,
-          children: ['', 'fledglingEngineer', 'server', 'oauth', 'randomPassword'],
-        },
-      ],
+
     },
-    repo: 'mosapride/hp',
+    repo: 'mosapride/zipide_hp',
     repoLabel: 'GitHub',
-    docsRepo: 'mosapride/hp',
+    docsRepo: 'mosapride/zipide_hp',
     docsDir: 'docs',
     editLinks: true,
     editLinkText: 'GitHub',

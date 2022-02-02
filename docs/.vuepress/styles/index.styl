@@ -13,8 +13,6 @@
   color: #1d1d1f;
   font-family: "SF Pro JP","SF Pro Display","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",sans-serif;
 
-
-
 .custom-description
   display: block;
   font-weight: 600;
@@ -46,7 +44,7 @@
 
 .start-btn:hover
   color: #fff;
-  background-color: #0071e3;
+  background-color: #3587da;
 
 .custom-img-wrap {
   overflow: hidden;
@@ -70,6 +68,16 @@
   100% {
     transform: translateX(100%);
   }
+}
+
+div.custom-date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.custom-date i {
+  padding: 0 5px 0 10px;
 }
 
 
@@ -137,14 +145,28 @@ main.page img.border
   border: 1px solid rgba(0,0,0,0.1);
   padding: 5px;
 
-main .theme-default-content h2
-  color: #111827;
-  font-weight: 700;
-  font-size: 1rem;
-  margin: 3rem 0 2.5rem !important;
-  padding: 1.2rem !important;
-  background-color: #f3f4f6;
-  text-align: center;
+main h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	text-align: center;
+  border-bottom: none;
+}
+
+main h2:before, main h2:after {
+	content: '';
+	width: 50px;
+	height: 3px;
+	background-color: #aaa;
+}
+
+main h2:before {
+	margin-right: 20px;
+}
+main h2:after {
+	margin-left: 20px;
+}
 
 main .theme-default-content:not(.custom) h3
   padding-top: 1rem !important;

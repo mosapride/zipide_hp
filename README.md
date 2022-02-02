@@ -51,18 +51,48 @@ MIT
 
 ```md
 ---
-title: `Angular|TypeScript|HTMLxxx`など - `タイトル`
-description: description内容の抜粋
+title: 始める前に
+description: 即時文字入力チェックを行うパターン。`(input) event`により発火させ、引数は`$event.target.value`にするべし。
 ---
+
+<div class="custom-date">
+  <i class="far fa-calendar"></i>2022/02/01
+  <i class="fas fa-undo-alt"></i>2022/02/01
+</div>
+
 ```
 
-Google Adsense
+### tip
 
-```atom
-<ClientOnly>
-  <CallInFeedAdsense />
-</ClientOnly>
+```md
+:::tip <i class="fas fa-info-circle"></i> Hoge
+Tip内容を書く
+:::
+
+:::tip <i class="fas fa-book"></i> Note
+場合によっては順序があるので、複数導入する場合は上から順に作業することをおすすめします。
+:::
 ```
+
+```md
+::: tip
+This is a tip
+:::
+
+::: warning
+This is a warning
+:::
+
+::: danger
+This is a dangerous warning
+:::
+
+::: details
+This is a details block, which does not work in IE / Edge
+:::
+```
+
+
 
 ### タイトルの書き方
 
@@ -72,17 +102,6 @@ description
 
 * [Angular](https://angular.io/)
 
-### イメージ画像
-
-```md
-貼り付け
-<img :src="$withBase('/images/hako/profile.png')" alt="TypeScriptとJavaScriptの実行イメージ">
-または
-![TypeScriptとJavaScriptの実行イメージ](/images/hako/profile.png)
-
-枠付き
-<img class="border" :src="$withBase('/images/hako/skin03.png')" alt="skin変更手順3">
-```
 
 ## Image
 
