@@ -94,7 +94,7 @@ module.exports = {
     search : false,
     nav: [
       {
-        text: '始める',
+        text: '見てみる',
         link: '/docs/',
       },
       {
