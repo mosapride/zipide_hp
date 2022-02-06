@@ -76,3 +76,14 @@ This is a details block, which does not work in IE / Edge
 :::
 ```
 
+### amazon
+
+```html
+<div class="amazon-contents">
+<img :src="$withBase('/amazon-logo.png')" class="img-center m-5">
+<a href="アフィリエイトURL" target="_blank" rel="noopener" class="amazon">
+<div class="amazon-name">商品名</div>
+<img :src="$withBase('/images/docs/docs/width500pxの画像.png')" alt="ドライバー" class="img-center"><br>
+</a>
+</div>
+```
