@@ -30,6 +30,9 @@ description: 即時文字入力チェックを行うパターン。`(input) even
 
 枠付き
 <img class="border" :src="$withBase('/images/hako/skin03.png')" alt="skin変更手順3">
+
+中央揃えで、拡大機能なし★よくつかう
+<img :src="$withBase('/images/docs/docs/biitban-600x401.png')" alt="トップイメージ" class="img-center">
 ```
 
 ## Google Adsense

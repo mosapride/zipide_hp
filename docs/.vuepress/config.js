@@ -113,7 +113,7 @@ module.exports = {
           initialOpenGroupIndex: -1,
           sidebarDepth: 0,
           children: [
-            '',
+            '','os'
           ],
         },
       ],
@@ -185,7 +185,7 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        ga: 'UA-24357312-11',
+        ga: 'UA-24357312-8',
       },
     ],
     [

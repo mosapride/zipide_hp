@@ -7,7 +7,7 @@ description: 自作PCを行わない方が良い人。自作PCは趣味の領域
 
 <div class="custom-date">
   <i class="far fa-calendar"></i>2022/02/01
-  <i class="fas fa-undo-alt"></i>2022/02/01
+  <i class="fas fa-undo-alt"></i>2022/02/07
 </div>
 
 <ClientOnly>
