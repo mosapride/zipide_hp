@@ -3,6 +3,8 @@ title: OS
 description: 2022年現在ではWindows 10とWindows 11の選択があります。Windows 10のサポート期限は2025年10月14日となっています。まだ3年近く余裕があるため急いで新しいWindows 11にする必要はありません。
 ---
 
+# OS
+
 <div class="custom-date">
   <i class="far fa-calendar"></i>2022/02/07
   <i class="fas fa-undo-alt"></i>2022/02/07
@@ -11,8 +13,6 @@ description: 2022年現在ではWindows 10とWindows 11の選択があります�
 <ClientOnly>
   <CallInFeedAdsense />
 </ClientOnly>
-
-# OS
 
 OS【Operating System】オーエス、オペレーティング・システムと呼ばれます。
 
@@ -38,7 +38,7 @@ Windows 10から11にアップデートは期間付きですが、無料とな�
 
 ## 32bitは過去の遺物
 
-<img :src="$withBase('/images/docs/os/windows_64.png')" alt="Windowsエディション" class="img-center">
+<img :src="$withBase('/images/docs/os/windows_64.png')" alt="64bitしか勝たん" class="img-center">
 
 OSには32bit、64bitの2種類があります。一度入れてしまうとクリーンインストールを行わない限り変更することができません。かならず64bitを選択しましょう。
 32bit OSはサポートする最大メモリサイズが4GBまでとなっています。さらに64bit対応アプリケーションを動かすことはできません。
@@ -46,6 +46,8 @@ OSには32bit、64bitの2種類があります。一度入れてしまうとク�
 64bit OSはサポートする最大メモリサイズがWindows 10 Homeは128GB、Proの場合は2TBとなっています。32bit対応アプリケーションも下位互換があり動かすことができます。
 
 ## WindowsのEditionと販売形態
+
+<img :src="$withBase('/images/docs/os/windows_10_usb.png')" alt="windows10 Homeが一番" class="img-center">
 
 結論から言うと、「Windows 10 Home USBフラッシュメモリ」が一番無難。
 
@@ -65,6 +67,19 @@ Proの場合かつ、Windowsサーバーを利用する場合は[Active Director
 
 DSP版はデバイスやPCパーツとセットで販売されます。そしてセットで購入したパーツをPCに組み込む必要があります。つまり、セットで購入したパーツが壊れたらライセンスが無くなります。
 OSは高価ですので、安易に安いからDSPで良いとは考えないでください。OSは取り回しが効きやすい必要なソフトなので、数年後に新しいパソコンに組み直す場合にほぼ確実に取り回しが効きます。
+
+### USBフラッシュメモリとダウンロード版の違い
+
+USBフラッシュメモリ版はの内容物は、「USBフラッシュメモリ」と「プロダクトキー」です。USBフラッシュメモリの中にはWindowsのインストールイメージが入っています。
+
+ダウンロード版の場合は、「プロダクトキー」のみです。Windowsのインストールメディアは自身で作成する必要があります。インストールメディアを作成するメリットは最新に近いバージョン(更新タイミングにより最新ではないため)のOSイメージが入っていることです。Windows Updateの時間短縮になります。
+
+* 参考
+* [Windows 10 のダウンロード](https://www.microsoft.com/ja-jp/software-download/windows10)
+
+Amazonでダウンロード版を購入した場合は、アカウントサービス > ゲーム&PCソフトダウンロードライブラリからプロダクトキーを確認することができます。
+
+<img :src="$withBase('/images/docs/os/amazon_os.png')" alt="amazonでOSを購入した画像" class="img-center">
 
 ## 極端に安いOSは避けるべき
 
