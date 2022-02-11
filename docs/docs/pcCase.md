@@ -7,7 +7,7 @@ description: パーツを収めるただの箱。それとも、
 
 <div class="custom-date">
   <i class="far fa-calendar"></i>2022/02/10
-  <i class="fas fa-undo-alt"></i>2022/02/10
+  <i class="fas fa-undo-alt"></i>2022/02/12
 </div>
 
 <ClientOnly>
