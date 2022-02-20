@@ -14,15 +14,15 @@ description: CPUはCentral Processing Unitの略で、日本語正式名称で�
   <CallInFeedAdsense />
 </ClientOnly>
 
-<img :src="$withBase('/images/docs/cpu/cpu_eye_catch.png')" alt="cpu title" class="img-center">
-
 CPUはCentral Processing Unitの略で、日本語正式名称では中央演算装置と呼びます。購入するときに見ておくべきところを先に説明します。CPUの詳しい説明は後述しますが、見なくても構いません。
+
+<img :src="$withBase('/images/docs/cpu/cpu_eye_catch.png')" alt="cpu title" class="img-center">
 
 ## 最新世代と価格で選べ
 
-<img :src="$withBase('/images/docs/cpu/cpu_eye_catch2.png')" alt="eye catch" class="img-center">
-
 すごくシンプルで最新世代のCPUの中から自分の予算にあったCPUを選べばよいです。性能と価格は比例していきます。
+
+<img :src="$withBase('/images/docs/cpu/cpu_eye_catch2.png')" alt="eye catch" class="img-center">
 
 ## メーカーについて
 
@@ -46,8 +46,8 @@ Core i9、Ryzen 9などの上位モデルは価格も高くコスパも良くな
 |Intel|AMD|用途|価格|
 |---|---|---|---|
 |Xeon|EPYC|サーバー用途なので法人向け。価格はピンきりで、契約に近い方式で購入することが多い。基本的に電話で注文書からの作成となる。必要個数を聞かれて値段が決まる。１個単位の注文は稀で、納品まで数ヶ月かかるのがざら。一応PC専門店で在庫があれば普通に購入することができる。|不明|
-|Core Xシリーズ|Ryzen Threadripper|一般人でも購入することができる。開発、研究などに利用する場合が多く人を選ぶ。不具合が発生しても法人がメインで使用しているため情報が表に出にくく、自身で解決する必要がでてくる。|10万～|
-|Celeron/Pentium|Athlon|一般人でも購入することができる。ネットサーフィンは快適さを追求しなければできる|4000円～1.5万|
+|Core Xシリーズ|Ryzen Threadripper|高スペック。一般人でも購入することができる。開発、研究などに利用する人、つまりは法人向け。不具合が発生しても法人がメインで使用しているため情報が表に出にくく、自身で解決する必要がでてくる。|10万～|
+|Celeron/Pentium|Athlon|低スペック。一般人でも購入することができるが用途を選ぶ。ネットサーフィンは快適さを追求しなければできる。低消費電力なため、常時電源を付けておくビデオサーバーなどに利用するする人も。通常のPC作業を行いたい場合はお勧めできない。|4000円～1.5万|
 
 ## 内蔵グラフィック機能は必要か？
 
