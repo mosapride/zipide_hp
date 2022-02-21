@@ -39,6 +39,50 @@ PCのCPUはIntel、AMDの2つの企業が研究開発を行っています。202
 
 Core i9、Ryzen 9などの上位モデルは価格も高くコスパも良くない場合が多いです。さらに発熱も高いため冷却の知識も必要になります。
 
+### モデルによる比較
+
+スコアは[UserBenchmark](https://www.userbenchmark.com/)、価格は[製品仕様](https://ark.intel.com/content/www/jp/ja/ark.html)、[AMD Store](https://www.amd.com/en/direct-buy/jp)を参考にしています。
+
+2022年2月現在の最新CPUの一覧です。価格はメーカー小売価格になるため、ドルで表記しています。Intelはメーカー小売価格に差があるため、下記のような下位価格、上位価格を記載しています。
+
+#### Intel Core i9とRyzen 9
+
+|名称|スレッド数|Normal|Heavy|Server|価格($)～|～価格($)|
+|---|---|---|---|---|---|---|
+|Core i9-12900KF|24|226|1143|<div class='cpu-bar' style='width:100%'>2979</div>|564|574|
+|Ryzen 9 5950X|32|191|918|<div class='cpu-bar' style='width:99.7650218194025%'>2972</div>|799|799|
+|Core i9-12900K|24|227|1143|<div class='cpu-bar' style='width:99.4293387042632%'>2962</div>|589|599|
+|Core i9-12900F|24|223|1117|<div class='cpu-bar' style='width:95.4347096341054%'>2843</div>|464|494|
+|Core i9-12900|24|224|1114|<div class='cpu-bar' style='width:90.9365558912387%'>2709</div>|489|519|
+|Ryzen 9 5900X|24|191|904|<div class='cpu-bar' style='width:68.7143336690164%'>2047</div>|549|549|
+
+#### Intel Core i7とRyzen 7
+
+|名称|スレッド数|Normal|Heavy|Server|価格($)～|～価格($)|
+|---|---|---|---|---|---|---|
+|Core i7-12700KF|20|221|1100|<div class='cpu-bar' style='width:81.7724068479356%'>2436</div>|384|394|
+|Core i7-12700K|20|221|1103|<div class='cpu-bar' style='width:81.6717019133938%'>2433</div>|409|419|
+|Core i7-12700F|20|216|1046|<div class='cpu-bar' style='width:76.5693185632763%'>2281</div>|314|324|
+|Core i7-12700|20|211|1039|<div class='cpu-bar' style='width:75.9315206445116%'>2262</div>|339|349|
+|Ryzen 7 5800X|16|190|846|<div class='cpu-bar' style='width:56.1933534743202%'>1674</div>|449|449|
+|Ryzen 7 5700G|16|181|819|<div class='cpu-bar' style='width:53.3064786841222%'>1588</div>|359|359|
+
+#### Intel Core i5とRyzen 5
+
+|名称|スレッド数|Normal|Heavy|Server|価格($)～|～価格($)|
+|---|---|---|---|---|---|---|
+|Core i5-12600K|12|215|986|<div class='cpu-bar' style='width:62.8398791540785%'>1872</div>|289|299|
+|Core i5-12600KF|12|216|984|<div class='cpu-bar' style='width:62.7391742195367%'>1869</div>|264|274|
+|Core i5-12600|12|209|845|<div class='cpu-bar' style='width:43.2695535414569%'>1289</div>|223|233|
+|Core i5-12400F|12|191|791|<div class='cpu-bar' style='width:41.5911379657603%'>1239</div>|167|174|
+|Ryzen 5 5600X|12|184|766|<div class='cpu-bar' style='width:41.1547499160792%'>1226</div>|299|299|
+|Ryzen 5 5600G|12|176|738|<div class='cpu-bar' style='width:40.0805639476334%'>1194</div>|259|259|
+|Core i5-12400|12|191|772|<div class='cpu-bar' style='width:39.812017455522%'>1186</div>|192|199|
+|Core i5-12500|12|199|787|<div class='cpu-bar' style='width:39.812017455522%'>1186</div>|202|212|
+
+
+<!-- 49613 / x * 100 -->
+
 ### サーバー用、強すぎるCPU、弱すぎるCPU
 
 上記のモデル以外にもサーバー用、コンシューマー向けに販売はされているが人を選ぶCPU、貧弱で用途を選ぶCPUがあります。用途を熟知している人以外はこれらのCPU購入はお勧めできません。
