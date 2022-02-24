@@ -49,42 +49,36 @@ Core i9、Ryzen 9などの上位モデルは価格も高くコスパも良くな
 
 |名称|スレッド数|Normal|Heavy|Server|価格($)|
 |---|---|---|---|---|---|---|
-|Core i9-12900KF|24|226|1143|<div class='cpu-bar' style='width:100%'>2979</div>|574|
-|Ryzen 9 5950X|32|191|918|<div class='cpu-bar' style='width:99.7650218194025%'>2972</div>|799|
-|Core i9-12900K|24|227|1143|<div class='cpu-bar' style='width:99.4293387042632%'>2962</div>|599|
-|Core i9-12900F|24|223|1117|<div class='cpu-bar' style='width:95.4347096341054%'>2843</div>|494|
-|Core i9-12900|24|224|1114|<div class='cpu-bar' style='width:90.9365558912387%'>2709</div>|519|
-|Ryzen 9 5900X|24|191|904|<div class='cpu-bar' style='width:68.7143336690164%'>2047</div>|549|
-
+|[Core i9-12900KF](https://amzn.to/3hdSUGd)|24|226|1143|<div class='cpu-bar' style='width:100%'>2979</div>|574|
+|[Ryzen 9 5950X](https://amzn.to/356XRhF)|32|191|918|<div class='cpu-bar' style='width:99.7650218194025%'>2972</div>|799|
+|[Core i9-12900K](https://amzn.to/35oEuAg)|24|227|1143|<div class='cpu-bar' style='width:99.4293387042632%'>2962</div>|599|
+|[Core i9-12900F](https://amzn.to/3LUQjz4)|24|223|1117|<div class='cpu-bar' style='width:95.4347096341054%'>2843</div>|494|
+|[Core i9-12900](https://amzn.to/3HgZpmf)|24|224|1114|<div class='cpu-bar' style='width:90.9365558912387%'>2709</div>|519|
+|[Ryzen 9 5900X](https://amzn.to/3BQBuco)|24|191|904|<div class='cpu-bar' style='width:68.7143336690164%'>2047</div>|549|
 
 #### Intel Core i7とRyzen 7
 
 |名称|スレッド数|Normal|Heavy|Server|価格($)|
 |---|---|---|---|---|---|---|
-|Core i7-12700KF|20|221|1100|<div class='cpu-bar' style='width:81.7724068479356%'>2436</div>|394|
-|Core i7-12700K|20|221|1103|<div class='cpu-bar' style='width:81.6717019133938%'>2433</div>|419|
-|Core i7-12700F|20|216|1046|<div class='cpu-bar' style='width:76.5693185632763%'>2281</div>|324|
-|Core i7-12700|20|211|1039|<div class='cpu-bar' style='width:75.9315206445116%'>2262</div>|349|
-|Ryzen 7 5800X|16|190|846|<div class='cpu-bar' style='width:56.1933534743202%'>1674</div>|449|
-|Ryzen 7 5700G|16|181|819|<div class='cpu-bar' style='width:53.3064786841222%'>1588</div>|359|
-
+|[Ryzen 7 5700G](https://amzn.to/3hfSFu9)|16|181|819|<div class='cpu-bar' style='width:53.3064786841222%'>1588</div>|359|
+|[Ryzen 7 5800X](https://amzn.to/3IkRJAO)|16|190|846|<div class='cpu-bar' style='width:56.1933534743202%'>1674</div>|449|
+|[Core i7-12700](https://amzn.to/3IiYZgB)|20|211|1039|<div class='cpu-bar' style='width:75.9315206445116%'>2262</div>|349|
+|[Core i7-12700F](https://amzn.to/3pcy7XU)|20|216|1046|<div class='cpu-bar' style='width:76.5693185632763%'>2281</div>|324|
+|[Core i7-12700K](https://amzn.to/3LYWjXx)|20|221|1103|<div class='cpu-bar' style='width:81.6717019133938%'>2433</div>|419|
+|[Core i7-12700KF](https://amzn.to/3JUUysO)|20|221|1100|<div class='cpu-bar' style='width:81.7724068479356%'>2436</div>|394|
 
 #### Intel Core i5とRyzen 5
 
 |名称|スレッド数|Normal|Heavy|Server|価格($)|
 |---|---|---|---|---|---|---|
-|Core i5-12600K|12|215|986|<div class='cpu-bar' style='width:62.8398791540785%'>1872</div>|299|
-|Core i5-12600KF|12|216|984|<div class='cpu-bar' style='width:62.7391742195367%'>1869</div>|274|
-|Core i5-12600|12|209|845|<div class='cpu-bar' style='width:43.2695535414569%'>1289</div>|233|
-|Core i5-12400F|12|191|791|<div class='cpu-bar' style='width:41.5911379657603%'>1239</div>|174|
-|Ryzen 5 5600X|12|184|766|<div class='cpu-bar' style='width:41.1547499160792%'>1226</div>|299|
-|Ryzen 5 5600G|12|176|738|<div class='cpu-bar' style='width:40.0805639476334%'>1194</div>|259|
-|Core i5-12400|12|191|772|<div class='cpu-bar' style='width:39.812017455522%'>1186</div>|199|
-|Core i5-12500|12|199|787|<div class='cpu-bar' style='width:39.812017455522%'>1186</div>|212|
-
-
-
-<!-- 49613 / x * 100 -->
+|[Core i5-12600K](https://amzn.to/34Z5Z3P)|12|215|986|<div class='cpu-bar' style='width:62.8398791540785%'>1872</div>|299|
+|[Core i5-12600KF](https://amzn.to/3hbyoGn)|12|216|984|<div class='cpu-bar' style='width:62.7391742195367%'>1869</div>|274|
+|[Core i5-12600](https://amzn.to/3t6Ko17)|12|209|845|<div class='cpu-bar' style='width:43.2695535414569%'>1289</div>|233|
+|[Core i5-12400F](https://amzn.to/3BNre4o)|12|191|791|<div class='cpu-bar' style='width:41.5911379657603%'>1239</div>|174|
+|[Ryzen 5 5600X](https://amzn.to/3Ij8wnP)|12|184|766|<div class='cpu-bar' style='width:41.1547499160792%'>1226</div>|299|
+|[Ryzen 5 5600G](https://amzn.to/3hvfri5)|12|176|738|<div class='cpu-bar' style='width:40.0805639476334%'>1194</div>|259|
+|[Core i5-12400](https://amzn.to/3BNUMPq)|12|191|772|<div class='cpu-bar' style='width:39.812017455522%'>1186</div>|199|
+|[Core i5-12500](https://amzn.to/3sfq5zj)|12|199|787|<div class='cpu-bar' style='width:39.812017455522%'>1186</div>|212|
 
 ### サーバー用、強すぎるCPU、弱すぎるCPU
 
