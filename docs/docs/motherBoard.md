@@ -7,7 +7,7 @@ description: マザーボードはすべてのパーツを接続するための�
 
 <div class="custom-date">
   <i class="far fa-calendar"></i>2022/02/13
-  <i class="fas fa-undo-alt"></i>2022/02/26
+  <i class="fas fa-undo-alt"></i>2022/03/15
 </div>
 
 <ClientOnly>
@@ -61,11 +61,19 @@ AMD Ryzen 5000シリーズに対応した最新チップセットは3種類で�
 
 ## サイズ
 
-マザーボードには大きさの規格が存在します。主流なもので大きい順でATX、Micro-ATX、Mini-ITXの3種類です。PCケースが決まっているならば、**PCケースに対応したマザーボードを選んでください**。
+マザーボードには大きさの規格が存在します。主流なもので大きい順でATX、Micro-ATX、Mini-ITXの3種類です。PCケースが決まっているならば、基本は**PCケースに対応したマザーボードを選んでください**。
 
 * ATX
 * Micro-ATX
 * Mini-ITX
+
+<img :src="$withBase('/images/docs/motherBoard/mother_size.png')" alt="マザーボードのサイズ" class="img-center">
+
+大きなマザーボードが拡張性に優れているのはPCIスロットの個数によるところが大きいです。ATXの場合は最大PCI数は7となりますが、実際はこれよりかなり数が少ないです。PCIeスロットの用途は主にグラフィックボードを取り付ける箇所になります。
+
+<img :src="$withBase('/images/docs/motherBoard/mother_pcieslot.png')" alt="PCIeスロット" class="img-center">
+
+PCIeスロットはグラフィックボード以外にもビデオキャプチャーやサウンドカード、ネットワークカード(Wifi)などに使用します。しかし、グラフィックボード以外の製品はUSB対応製品が存在するため、必ずしも多くのPCIeスロットが必要ではありません。ビデオキャプチャーやサウンドカードにこだわりがあり、PCIeスロットが必要な場合は製品をよく見て選んでください。
 
 ## 互換性を確認しよう
 
@@ -77,15 +85,15 @@ GIGABYTEのB550 AORUS PRO AX (rev. 1.0)を例として見方を説明します�
 
 [B550 AORUS PRO AX](https://www.gigabyte.com/jp/Motherboard/B550-AORUS-PRO-AX-rev-10#kf)のページに行き、サポートを選択します。
 
-<img :src="$withBase('/images/docs/\motherBoard/b550_aoru_top.png')" alt="タスクマネージャー2" class="img-center">
+<img :src="$withBase('/images/docs/motherBoard/b550_aoru_top.png')" alt="サポート" class="img-center">
 
 サポートページにある**CPUサポートリスト**を選択します。メーカーページにより、CPUと略されている場合があります。
 
-<img :src="$withBase('/images/docs/\motherBoard/b550_aoru_support.png')" alt="タスクマネージャー2" class="img-center">
+<img :src="$withBase('/images/docs/motherBoard/b550_aoru_support.png')" alt="CPUサポートリスト１" class="img-center">
 
 ページ内にサポートされているCPU情報を確認することができます。
 
-<img :src="$withBase('/images/docs/\motherBoard/b550_aoru_support_cpu.png')" alt="タスクマネージャー2" class="img-center">
+<img :src="$withBase('/images/docs/motherBoard/b550_aoru_support_cpu.png')" alt="CPUサポートリスト２" class="img-center">
 
 ## BIOSのバージョン
 
@@ -118,7 +126,15 @@ BIOS Flashbackなどの機能が無い製品の場合は動作するCPUとメモ
 
 * オーバークロック耐性をもたせるために電源フェーズが耐久性重視
 * ボード自体をサーバーグレードの品質にし、反りの防止、信号整合性を向上
+* 冷却能力の高いヒートシンクを採用
 * RGB(マザーボード自体が光る)
 * RGB LEDヘッダー(別購入したLEDファンなどの光の制御をする)
 * BIOS Flashbackなどの機能
 
+## ほどほどに安いので十分
+
+マザーボードの性能で処理性能は左右されません。個人的にはオーバークロックは推奨しないため高耐久なマザーボードは必要ありません。マザーボードはCPUとの互換があるため、流用できるか不明確なパーツなので過度な高級マザーボードは趣味の領域です。
+
+高価なマザーボードほど、ヒートシンクがしっかりして冷却能力が高いです。しかし、ヒートシンクが大きいからこそ、CPUクーラーの干渉問題が出てくることがあります。さらに対応CPUクーラーなどのリストが存在しないため対応策が無いのが現状です。
+
+つまり、安いので十分って話です。
