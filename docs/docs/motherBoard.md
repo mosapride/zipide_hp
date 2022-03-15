@@ -79,6 +79,8 @@ PCIeスロットはグラフィックボード以外にもビデオキャプチ�
 
 CPUとマザーボードの互換性を確認するには、メーカー公式ページが一番正しい情報です。
 
+### 対応CPUを確認する
+
 CPUとマザーボードが対応しているかはマザーボードメーカーの製品ページ→サポート→CPUなどで確認することができます。
 
 GIGABYTEのB550 AORUS PRO AX (rev. 1.0)を例として見方を説明します。他メーカーもほとんど同じページ構成です。
@@ -95,11 +97,34 @@ GIGABYTEのB550 AORUS PRO AX (rev. 1.0)を例として見方を説明します�
 
 <img :src="$withBase('/images/docs/motherBoard/b550_aoru_support_cpu.png')" alt="CPUサポートリスト２" class="img-center">
 
-## BIOSのバージョン
+#### BIOSのバージョン
 
 BIOSにはバージョンが存在します。自身でアップデートが可能です。マザーボードとCPUによりますが、特定以上のBIOSバージョンである必要があります。
 
 例としてB550 AORUS PRO AXではRyzen 9 3950Xは、初期バージョンである「F1」から動作しますが、Ryzen 9 5950Xは「F10」からとなります。つまり、「F1」ではRyzen 9 5950Xは認識しません（動きません）。マザーボードがどのバージョンまでアップデートされているかは店舗次第です。BIOSのバージョンが確認したい場合は店舗に問い合わせるしかありません。
+
+### 対応メモリー
+
+2022年3月現在では、マザーボードが対応するメモリー規格はDDR4とDDR5が主流です。マザーボードの対応するメモリーと、差すメモリーの規格が違うと物理的に刺さりません。間違った規格をさせないように切り欠きの箇所が異なります。
+
+<img :src="$withBase('/images/docs/motherBoard/mother_memoryddr4_ddr5.png')" alt="DDR4とDDR5の違い" class="img-center">
+
+対応するメモリーはスペック表に記載されています。必ず確認してください。
+
+<img :src="$withBase('/images/docs/motherBoard/spec_memory.png')" alt="DDR4とDDR5の違い" class="img-center">
+
+DDR4,5のあとに数値が書かれています。この数値は動作周波数を示し、数値が高いほど高速となります。
+
+#### メモリーの相性問題
+
+マザーボードとメモリーは相性問題があります。マザーボードメーカーは検証した動作するメモリーのリストを公開していますが、高価だったり、日本では未発売だったりします。メーカー検証済みメモリーを入手するのが一番無難ではありますが、簡単ではない場合があります。口コミやメーカーなどで選ぶしかない状況もあるでしょう。
+
+しかし、メモリーメーカーは独自に相性保証をしていたりします。相性保証サービスを行っている店舗もあります。有効活用してください。
+
+* 参考リンク
+* [CFD-メモリ相性保証サービス](https://www.cfd.co.jp/support/contact/memory_compatibility/)
+* [ドスパラ-ドスパラのメモリ相性保証](https://www.dospara.co.jp/5info/cts_parts_aisyou)
+* [TSUKUMO-ツクモ交換保証 詳細](https://support.tsukumo.co.jp/contents/change_hosyo_details/)
 
 ## BIOSのCPUなし更新機能
 
