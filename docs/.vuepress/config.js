@@ -113,7 +113,7 @@ module.exports = {
           initialOpenGroupIndex: -1,
           sidebarDepth: 0,
           children: [
-            '','os','pcCase','cpu','motherBoard','cpuCooler'
+            '','os','pcCase','cpu','motherBoard','cpuCooler','memory'
           ],
         },
       ],

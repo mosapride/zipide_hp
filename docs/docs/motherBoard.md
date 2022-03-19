@@ -14,18 +14,18 @@ description: マザーボードはすべてのパーツを接続するための�
   <CallInFeedAdsense />
 </ClientOnly>
 
-<img :src="$withBase('/images/docs/motherBoard/mother_eye_catch.png')" alt="マザーボードはすべてを繋ぐ" class="img-center">
-
 マザーボードはすべてのパーツを接続するための部品です。CPU、CPUクーラー、メモリー、ストレージ、電源ユニットすべてが接続されます。見るべきところはチップセットとサイズになります。
 
-## CPUと互換性があるマザーボードを選ぼう
+<img :src="$withBase('/images/docs/motherBoard/mother_eye_catch.png')" alt="マザーボードはすべてを繋ぐ" class="img-center">
 
-<img :src="$withBase('/images/docs/motherBoard/AMD-Ryzen-Support-Matrix.jpg')" alt="Ryzenチップセット" class="img-center" style="max-width:80%">
+## CPUと互換性があるマザーボードを選ぼう
 
 マザーボードにはチップセットと呼ばれる部品が内蔵されています。CPUとチップセットには対応する製品があるため、対応していないCPUとマザーボードの組み合わせにしてしまうと動作しません。
 
 > チップセットとは「ブリッジ」とも呼ばれ、パソコンに搭載されているパーツや機器の橋渡しをする、マザーボードやCPUなどに存在する集積回路となります。
 > [参考](https://www.dospara.co.jp/5info/cts_str_parts_chipset)
+
+<img :src="$withBase('/images/docs/motherBoard/AMD-Ryzen-Support-Matrix.jpg')" alt="Ryzenチップセット" class="img-center" style="max-width:80%">
 
 チップセットにはランクがあります。わかりやすい箇所ではUSBのポート数です。上位ランクの方が多くのUSBポートが実装されています。しかし、**特殊な用途以外ではチップセットのランクを意識する必要はありません**。
 
