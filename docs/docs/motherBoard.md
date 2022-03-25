@@ -7,14 +7,16 @@ description: マザーボードはすべてのパーツを接続するための�
 
 <div class="custom-date">
   <i class="far fa-calendar"></i>2022/02/13
-  <i class="fas fa-undo-alt"></i>2022/03/15
+  <i class="fas fa-undo-alt"></i>2022/03/26
 </div>
 
 <ClientOnly>
   <CallInFeedAdsense />
 </ClientOnly>
 
-マザーボードはすべてのパーツを接続するための部品です。CPU、CPUクーラー、メモリー、ストレージ、電源ユニットすべてが接続されます。見るべきところはチップセットとサイズになります。
+マザーボードはすべてのパーツを接続するための部品です。CPU、CPUクーラー、メモリー、ストレージ、電源ユニットすべてが接続されます。
+
+PCケースとCPUが決まっている場合は見るべきところはチップセットとファームファクタ(サイズ)になります。マザーボードが決まったら対応しているメモリーの規格も確認しておきます。
 
 <img :src="$withBase('/images/docs/motherBoard/mother_eye_catch.png')" alt="マザーボードはすべてを繋ぐ" class="img-center">
 
