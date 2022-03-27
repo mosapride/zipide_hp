@@ -67,7 +67,7 @@ module.exports = {
     [
       'link',
       {
-       href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+       href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css',
        rel: 'stylesheet'
       }
     ],
@@ -113,7 +113,7 @@ module.exports = {
           initialOpenGroupIndex: -1,
           sidebarDepth: 0,
           children: [
-            '','os','pcCase','cpu','motherBoard','cpuCooler','memory'
+            '','os','pcCase','cpu','motherBoard','cpuCooler','memory','storage'
           ],
         },
       ],
